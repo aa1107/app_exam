@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.clearbox::after{
+    clear: both;
+    content:'';
+    display: block;
+}
+/* 링크 스타일 */
+a{
+    text-decoration:none;
+    color:black;
+}
+ul,ol,li{
+    list-style-type:"none";
+}
+html, body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight:bold;
+    font-size:12px;
+    height: 100%;
+}
