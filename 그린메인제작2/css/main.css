@@ -1,0 +1,44 @@
+/* *{
+    border: 1px solid black;
+} */
+.header{
+    width:1050px;
+    height:120px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.header>div{
+    float:left;
+}
+.callnum{
+    width:300px;
+}
+.logo{
+    width:432px;
+}
+.sidemenu{
+    float:right;
+    width:300px;
+}
+.nav>ul>li{
+    float: left;
+}
+.jumbotron{
+    width:100%;
+    height:460px;
+    position: relative;
+    border: 1px solid black;
+}
+.cont1,.cont2,.cont3,.cont4,.cont5{
+    height:460px;
+    position: absolute;
+}
+.links{
+    position: absolute;
+    left:50%;
+    bottom:10%;
+    transform: translate(-50%,-50%);
+}
+.links a{
+    transition: all 0.5s ease;
+}
