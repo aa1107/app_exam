@@ -46,10 +46,11 @@
 .content .curriTop{
     background:#efefef;
     padding: 10px;
+    height: 225px;
 }
 .content .curriTop .img{
     width:30%;
-    height:14vw;
+    height:100%;
     float:left;
 }
 .content .curriTop .img img{

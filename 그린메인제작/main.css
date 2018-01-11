@@ -39,13 +39,16 @@
     padding: 0.7px;
     box-sizing: content-box;
 }
+.header>.nav>ul>li>ul{
+    border-top: 1px solid #888;
+}
 .header>.nav>ul>li>ul>li{
     width:100%;
 }
 .header>.nav>ul>li>ul>li>a{
     transition: 0.5s all ease;
     font-size:0.9em;
-    
+    height: 26px;
     width:100%;
     font-weight: bolder;
     display: block;
@@ -53,9 +56,25 @@
     color:rgb(61, 127, 189);
     line-height: 1.5em;
     text-shadow: 0px 0px 0.5px #999;
-    border-bottom:1px solid #ddd;
+    
 }
-
+.header>.nav>ul>li:hover>ul>li>a{
+    color:rgb(23, 108, 187);
+}
+.header>.nav>ul>li:hover>ul{
+}
+.header>.nav>ul>li:hover>ul>li>a>div{
+    border-bottom:1px solid #bbb;
+}
+.header>.nav>ul>li>ul>li>a>div{
+    display: inline-block;
+    width:90px;
+    padding-bottom: 5px;
+    border-bottom:1px solid #ccc;
+}
+.header>.nav>ul>li>ul>li:last-child>a>div{
+    border-bottom:0;
+}
 .header>.nav>ul>li>ul{
     position: absolute;
     z-index: 100;
@@ -147,15 +166,25 @@
     transform: translate(0,-50%);
     color:#666;
 }
+.titlebox{ 
+    padding-bottom: 88px;
+    background: #efefef;
+}
+.titleboxtxt{
+    text-align: center;
+    font-family: 'nanumbarun';
+    font-size: 3em;
+    font-weight: bold;
+    padding: 20px;
+    color:#333;
+}
 .linkbox{
     width:1000px;
     height: 270px;
     margin:0 auto;
 }
-.linkbox1{
-    background:#8fcdf4;
-}
 .linkbox1, .linkbox2, .linkbox3{
+    background: #ffffff;
     position: relative;
     width:33.33%;
     height:100%;
@@ -163,6 +192,9 @@
     cursor:pointer;
     transition: 0.5s all ease;
     text-align: center;
+}
+.linkbox1{
+    background:#8fcdf4;
 }
 .linkbox h4{
     line-height: 1.3em;
@@ -194,4 +226,8 @@
 .linkboximg3{
     background:url(image/java1.jpg);
     background-size:100% 100%;
+}
+.greenfooter{
+    height:100px;
+    background:#777;
 }
