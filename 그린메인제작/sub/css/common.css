@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-@import url(http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
+@import url(reset.css);
 *{
     padding: 0;
     margin: 0;
@@ -20,9 +19,10 @@ ul,ol,li{
     list-style-type:none;
 }
 html, body{
+    color:#666;
     font-family: 'Nanum Gothic', sans-serif;
     font-style: normal;
     font-weight:bold;
-    font-size:12px;
+    font-size:14px;
     height: 100%;
 }
