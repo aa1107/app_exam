@@ -22,9 +22,8 @@
 }
 .content .title{
     font-size:1.5em;
-    font-weight: bold;
+    font-weight: bolder ;
     color:#333;
-    padding-bottom:20px;
     padding-left: 10px;
     margin:20px 0;
 }
@@ -93,4 +92,52 @@
 }
 .table2 td:nth-of-type(4){
     text-align: left;
+}
+.greenfooter{
+    height:100px;
+    background:#ccc;
+    padding: 10px 0;
+}
+.footerbox{
+    position: relative;
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+}
+.callbox{
+    width:180px;
+    position:absolute;
+    right:0px;
+}
+.callbox img{
+    width:100%;
+}
+footer{
+    font-size:12px;
+}
+.footerulbar li{
+    float:left;
+}
+.footerulbar li a{
+    font-family: 'nanumbarungothic';
+    font-weight:bolder;
+    font-size:1.1em;
+    color:#444;
+    display: block;
+    padding: 10px 25px;;
+}
+.footerulbar li a:first-child{
+    padding-left:0px;
+}
+.footerulbar li a:hover{
+    color:#000;
+}
+.footerulbar2{
+    width:70%;
+}
+.footerulbar2 li{
+    float:left;
+    line-height:1.5em;
+}
+.footerulbar2 li a:hover{
 }

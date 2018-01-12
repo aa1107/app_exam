@@ -3,6 +3,7 @@
 
 /* 나눔고딕 웹폰트 스타일 */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
 * {
     padding: 0;
     margin:0;
@@ -51,7 +52,6 @@ a {
 }
 
 a:hover {
-    color: #f00;
     /* text-decoration: underline; */
 }
 
