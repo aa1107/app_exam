@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>반응형웹2</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        /* pc 기준 - 한줄에 3개 옆으로 나열 */
+        .box1,.box2,.box3{
+            width:33.3333%;
+            float: left;
+            height:200px;
+        }
+        .box1{
+            background: #f00;
+        }
+        .box2{
+            background: #ff0;
+        }
+        .box3{
+            background: #00f;
+        }
+        .navi{
+            background: rgba(0,0,0,0.5);
+        }
+        .navi::after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+        .navi li{
+            float: left;
+            padding:4px 50px;
+        }
+        .btn{
+            padding:20px 30px;
+            background: #00f;
+            display: none;
+        }
+        /* 태블릿 - 한 줄에 2개씩 옆으로 나열 */
+        @media screen and (max-width:1024px){
+            .box1,.box2,.box3{
+                width:50%;
+            }
+        }
+        /* 모바일 - 한 줄에 1개씩 옆으로 나열 */
+        @media screen and (max-width:768px){
+            .box1,.box2,.box3{
+                width:100%;
+            }
+            .btn{
+                display: inline-block;
+            }
+            .navi ul{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navi">
+        <button class="btn">메뉴</button>
+        <ul class="navi">
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+        </ul>
+</nav>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    
+    <div class="row">
+        <a href="" class="col-1"></a>
+        <a href="" class="col-2"></a>
+        <a href="" class="col-3"></a>
+        <a href="" class="col-4"></a>
+        <a href="" class="col-5"></a>
+        <a href="" class="col-6"></a>
+        <a href="" class="col-7"></a>
+    </div>
+</body>
+</html>
