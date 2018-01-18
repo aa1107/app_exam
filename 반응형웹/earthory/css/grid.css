@@ -1,10 +1,8 @@
-.container{
-    width:900px;
-    margin:0 auto;
-}
+/* .row .container(margin-left, margin-right 속성이 들어가는 클래스) 같은 태그에 넣으면 안됌 */
 .row{
     display: block;
     box-sizing: border-box;
+    /* 칸 사이 여백주기 */
     margin-left:-10px;
 }
 .row::after{
@@ -14,7 +12,9 @@
 }
 .row img{
     width:100%;
+    min-width: 152px;
 }
+/* .col-1 ~ .col-12 사용하는 태그에 width 속성을 쓰면 안됌 */
 .row>.col-1,
 .row>.col-2,
 .row>.col-3,
