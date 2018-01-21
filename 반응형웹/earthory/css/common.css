@@ -182,6 +182,44 @@ text-align: right;}
     font-weight: lighter;
     letter-spacing: 0;
 }
+.mainimg1, .mainimg2, .mainimg3, .mainimg4, .mainimg5, .mainimg6{
+    width:100%;
+}
+.mainimg1{
+    background:url(../imgs/recommend/img01.jpg) no-repeat center;
+    background-size:cover;
+    height:200px;
+}
+.mainimg2{
+    background:url(../imgs/recommend/img02.jpg) no-repeat center;
+    background-size:cover;
+    height:200px;
+}
+.mainimg3{
+    background:url(../imgs/recommend/img03.jpg) no-repeat center;
+    background-size:cover;
+    height:200px;
+}
+.mainimg4{
+    background:url(../imgs/recommend/img04.jpg) no-repeat center;
+    background-size:cover;
+    height:200px;
+}
+.mainimg5{
+    background:url(../imgs/recommend/img05.jpg) no-repeat center;
+    background-size:cover;
+    height:200px;
+}
+.mainimg6{
+    background:url(../imgs/recommend/img06.jpg) no-repeat center;
+    background-size:cover;
+    height:200px;
+}
+.mainCont2 .container .row .mainimgbox1{
+}
+.mainCont2 .container .row .mainimgbox1{
+    
+}
 @media screen and (max-width:1024px){
     .container{
         width:100%;
