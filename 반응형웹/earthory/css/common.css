@@ -182,43 +182,106 @@ text-align: right;}
     font-weight: lighter;
     letter-spacing: 0;
 }
-.mainimg1, .mainimg2, .mainimg3, .mainimg4, .mainimg5, .mainimg6{
-    width:100%;
+.mainimgbox1, .mainimgbox2, .mainimgbox3, .mainimgbox4, .mainimgbox5, .mainimgbox6{
+    position: relative;
+    width:350px;
+    min-width:324px;
+    height:300px;
 }
 .mainimg1{
-    background:url(../imgs/recommend/img01.jpg) no-repeat center;
-    background-size:cover;
-    height:200px;
+    background-image:url(../imgs/recommend/img01.jpg) ;
 }
 .mainimg2{
-    background:url(../imgs/recommend/img02.jpg) no-repeat center;
-    background-size:cover;
-    height:200px;
+    background-image:url(../imgs/recommend/img02.jpg);
 }
 .mainimg3{
-    background:url(../imgs/recommend/img03.jpg) no-repeat center;
-    background-size:cover;
-    height:200px;
+    background-image:url(../imgs/recommend/img03.jpg);
 }
 .mainimg4{
-    background:url(../imgs/recommend/img04.jpg) no-repeat center;
-    background-size:cover;
-    height:200px;
+    background-image:url(../imgs/recommend/img04.jpg);
 }
 .mainimg5{
-    background:url(../imgs/recommend/img05.jpg) no-repeat center;
-    background-size:cover;
-    height:200px;
+    background-image:url(../imgs/recommend/img05.jpg);
 }
 .mainimg6{
-    background:url(../imgs/recommend/img06.jpg) no-repeat center;
-    background-size:cover;
+    background-image:url(../imgs/recommend/img06.jpg);
+}
+.mainimg1, .mainimg2, .mainimg3, .mainimg4, .mainimg5, .mainimg6{
+    width:300px;
     height:200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition:all 2.3s ease-in-out;
+    background-size:100% 100%;
+}
+.mainCont2 .container .row>a:hover>.img{
+    background-size:120% 120%;
+}
+.mainCont2 .container .row .img p{
+    position:absolute;
+    left:25px;
+    bottom:108px;
+    transition:all 0.7s ease;
+}
+.mainCont2 .container .row .img p span:nth-child(1){
+    font-size:0.85em;
+    color:rgb(0, 164, 252);
+}
+.mainCont2 .container .row .img p span:nth-child(2){
+    font-size:0.85em;
+    color:#ccc;
+}
+.mainCont2 .container .row .img p span:nth-child(4){
+    font-size:1.07em;
+    font-weight:lighter;
+    color:#fff;
+}
+.mainCont2 .container .row .img p span:nth-child(4) i{
+    font-size:1em;
+    vertical-align: middle;
+}
+.mainCont2 .container .row .txt{
+    padding: 15px;
+    background:#fff;
+}
+.mainCont2 .container .row .txt span{
+    display:block;
+    color:#666;
+    font-size:0.9em;
+    font-weight: lighter;
+    line-height: 1.6em;
+}
+.mainCont2 .container .row .txt span:nth-of-type(1){
+    float:left;
+}
+.mainCont2 .container .row .txt span:nth-of-type(2){
+    float:right;
+}
+.mainCont2 .container .row .txt span:nth-of-type(3){
+    clear: both;
+}
+.mainCont2 .container .row .txt span:nth-of-type(4){
+    
+}
+.mainCont2 .container .row .txt span:nth-of-type(4) i{
+    
 }
 .mainCont2 .container .row .mainimgbox1{
 }
 .mainCont2 .container .row .mainimgbox1{
     
+}
+.mainCont2 .link,
+.mainCont3 .link{
+    padding: 20px 0;
+    text-align: center;
+    display:block;
+    width:350px;
+    background:#fff;
+    border:1px solid #ccc;
+    font-size:0.8em;
+    color:#666;
+    margin:30px auto 0
 }
 @media screen and (max-width:1024px){
     .container{
