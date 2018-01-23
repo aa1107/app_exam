@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="process.php" method="">
+        <p>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+        </p>
+        <p>
+            <label for="pw">패스워드</label>
+            <input type="password" id="pw" name="pw">
+        </p>
+        <p>
+            <label for="gender_m">남</label>
+            <input type="radio" id="gender_m" name="gender" value="남" checked="checked">
+            <label for="gender_f">녀</label>
+            <input type="radio" id="gender_f" name="gender" value="녀">
+        </p>
+        <p>
+            <span>취미</span>
+            <label for="music">음악감상</label>
+            <input type="checkbox" id="music" name="hobby1" value="음악감상">
+            <label for="movie">영화감상</label>
+            <input type="checkbox" id="movie" name="hobby2" value="영화감상">
+            <label for="game">게임</label>
+            <input type="checkbox" id="game" name="hobby3" value="게임">
+        </p>
+        <p>
+            <label for="location">지역선택</label>
+            <select id="location" name="location">
+                <option value="02">서울(02)</option>
+                <option value="031" selected="selected">경기(031)</option>
+                <option value="042">충남(042)</option>
+                <option value="043">충북(043)</option>
+            </select>
+        </p>
+        <p>
+            <label for="message">배송 메시지</label>
+            <textarea id="message" name="message" cols="50" rows="" style="vertical-align: middle"></textarea>asdasdsa
+        </p>
+        <p>
+            <label for="file">파일</label>
+            <input type="file" id="file" name="file">
+        </p>
+        <p>
+            <input type="submit" value="회원가입">
+            <button type="submit">회원가입</button>
+            <input type="reset" value="다시쓰기">
+            <button type="reset">다시쓰기</button>
+            <input type="button" value="버튼">
+            <button type="button">버튼</button>
+        </p>
+ </form>
+</body>
+</html>

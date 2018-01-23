@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Style</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{padding:0;margin:0}
+            /* display 속성 
+               inline
+               block
+               inline-block
+               none
+            */         
+            .wrap{border:solid 3px black;
+                }
+            /* .wrap::after{content:'after'}
+            .wrap::before{content:'before'} */
+            /* .wrap::after{content:'';display:block;clear:both;} */
+            .wrap a{
+                display:block;
+                border:solid #ff0 3px}
+            .box1,.box2,.box3{
+                /* display:inline-block; */
+                display:block;
+                float:left;
+                border:solid 3px red;
+            }
+            /* .box1, .box2{
+                float:left;
+                background:blue;
+            }
+            .box3{
+                clear:both;
+                background:purple;
+            } */
+                /* vertical-align:top;} */
+            /* 
+                내 요소보다 내 자식들의 사이즈가 오버될 때 오버된 부분 설정
+                overflow : visible[hidden,auto,scroll] 
+            */
+            .box1{height:30;overflow: auto;}
+            .box2{}
+            .box3{}
+            .box1 a{width:300px;height:100px}
+            .box2 a{width:500px;height:200px}
+            .box3 a{width:200px;height:100px}
+        </style>
+    </head>
+    <body>
+    <div class="wrap">
+        <div class="box1">
+            <a href="#">box1</a>
+        </div>
+        <div class="box2">
+            <a href="#">box2</a>
+        </div>
+        <div class="box3">
+            <a href="#">box3</a>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    
+    <div style="background:#ff0;height:100px">
+        ddddd
+    </div>
+    <header class="header">
+    
+    </header>
+  
+    <footer class="footer">
+        
+    </footer>
+    </body>
+</html>

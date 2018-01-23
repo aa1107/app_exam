@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/reset.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .div1{
+            width:100%;
+            height:600px;
+            animation:photoslide1 6s linear infinite 1s;
+            background:url(images/img01.jpg);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            background-position:center;
+            position:relative;
+            text-align:center;
+        }
+        @keyframes photoslide1{
+            from{ 
+                
+                background:url(images/img01.jpg);
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                background-position: 50%;
+            }
+            33%{
+                background-repeat: no-repeat;
+                background:url(images/img02.jpg);
+                background-size:100% 100%;
+                background-position:50%;
+            }
+            66%{
+                background-repeat: no-repeat;
+                background:url(images/img03.jpg);
+                background-size:100% 100%;
+                background-position:50%;
+            }
+            to{
+                background-repeat: no-repeat;
+                background:url(images/img01.jpg);
+                background-size:100% 100%;
+                background-position:50%;
+            }
+        }
+        .maintext1h1{
+            
+            font-size:4rem;
+            
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="maintext1">
+            <h1 class="maintext1h1">Caring for<br />Your Furry<br />Friends</h1>
+        </div>
+    </div>
+    
+</body>
+</html>

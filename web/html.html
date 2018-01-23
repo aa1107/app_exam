@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 외부 스타일 방식 -문서 전체에 적용 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 내부 스타일 방식 - 현재 문서에만 적용 -->
+    <style type="text/css">
+    /* 태그 선택자 */
+     a{color:orangered;}
+     /* 클래스 이름작성시 규칙
+        -영문자, 숫자, 특수기호(_)
+        -첫글자가 숫자가 오면 안됨
+        -영문자 대소문자를 구별
+        -띄어쓰기를 쓰면 안됨 */
+        /* . 클래스선택자 */
+     .bord{border:solid 7px   }
+        /* 아이디 선택자 */
+     #menu{border:solid 1px black;background-color:plum}
+     /* 하위 선택자 하위 전체 선택 */
+     .bord li{border:3px black dashed;}
+     #menu li{border:7px #f00 dotted;}
+    
+     /* 자식 선택자 1차 자식들만 선택 */
+     #menu>li{border:5px #03ffea solid; color:white;}
+
+     /* 그룹 선택자 */
+     body,h1,h2,h3,h4,h5,h6,div,p{padding:0; margin:0}
+
+     /* 선택자 우선순위 id>class>tag */
+     div{background:yellow !important;}
+     #box{background:#00f}
+     .greenBg{background:#0f0}
+     /* 주석은 컨트롤슬러시 */
+     /* 선택자{스타일속성이름:속성값;스타일속성이름:속성값} */
+    </style>
+</head>
+<body>
+    <span style="color:red">ddd</span>ddd
+    <ul id="menu"></ul>
+        <li><a href="#">메뉴1</a>
+        <ul class="bord">
+            <li><a href="#">소메뉴1</a></li>
+            <li><a href="#">소메뉴2</a></li>
+            <span>wefsdfsd</span>
+        </ul>
+        </li>
+        <li><a href="#">메뉴2</a>
+        <ul>
+            <li class="bord">소메뉴1</li>
+        </ul></li>
+        <li>메뉴3</a>
+            <ul id="menu"></ul>
+                <li><a href="#">소메뉴1</a></li>
+                <li><a href="#">소메뉴2</a></li>
+                <li><a href="#">소메뉴3</a></li>
+                <ul>
+                    <li><a href="#">소메뉴3_1</a></li>
+                </ul>
+            
+            </ul>
+        </li>
+    </ul>
+
+    <div id="box" class="greenBg">
+        <h3>타이틀</h3>
+        <ol>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ol>
+    </div>
+
+    <table>
+        <tr><td>하나</td><td>둘</td><td>셋</td></tr>
+        <tr><td>넷</td><td>다섯</td><td>여섯</td></tr>
+    </table>
+</body>
+</html>

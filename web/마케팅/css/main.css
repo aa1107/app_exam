@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+/* jumbotron */
+.jumbotron{
+    position: relative;
+    
+    height:660px;
+}
+.jumbotron .cont1,
+.jumbotron .cont2,
+.jumbotron .cont3,
+.jumbotron .cont4,
+.jumbotron .cont5{
+    height:660px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+}
+.jumbotron .cont1,.jumbotron .cont4{
+    background-image:url(../pet/images/img01.jpg);
+}
+.jumbotron .cont2,.jumbotron .cont5{
+    background-image:url(../pet/images/img02.jpg);
+}
+.jumbotron .cont3{
+    background-image:url(../pet/images/img03.jpg);
+}
+.jumbotron .txt01{
+    font-size:5em;
+    line-height: 1.5em;
+    color:#fff;
+    padding-top:170px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.jumbotron .txt02{
+    font-size:0.9em;
+    color:#fff;
+    padding-top: 30px;
+}
+.jumbotron .links{
+    z-index:100;
+    position: absolute;
+    bottom:10%;
+    left: 48%;
+    
+}
+.jumbotron .links a{
+    display:inline-block;
+    
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.693);
+    /* 글자 숨기기 */
+    text-indent:-9999px;
+    font-size:1px;
+    transition:all 0.5s ease;
+}
+.jumbotron .next{
+    position: absolute;
+    font-size: 5em;
+    font-weight: bold;
+    right: 10px;
+    top:40%;
+    z-index: 10;
+}
+.jumbotron .prev{
+    position: absolute;
+    font-size: 5em;
+    font-weight: bold;
+    left: 10px;
+    top:40%;
+    z-index: 10;
+}
+.jumbotron .links a.active{
+    background:#00f;
+}
+/* 배너 */
+.banner{
+    padding: 100px 0;
+    text-align: center;
+}
+.banner h2{
+    color:#8fd3e8;
+    padding-bottom: 80px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:3em;
+}
+.banner h2 .small{
+    font-size:1rem;
+    color:#666;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.banner .list li{
+    
+    width:29%;
+   
+    display: inline-block;
+    
+}
+.banner .list li:nth-child(1){
+    float: left;
+}
+.banner .list li:nth-child(2){
+    margin:0 5%;
+}
+.banner .list li:nth-child(3){
+    float: right;
+}
+.banner .list li .txt01{
+    font-size:1.5em;
+    color:#8fd3e8;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+}
+.banner .list li .txt02{
+    color:#666;
+    padding:10px 0;
+}
+.banner .list li button{
+    background-color:#8fd3e8;
+    color:#fff;
+    border:none;
+    font-size:1em;
+    padding: 1em 3em;
+    font-weight:bold;
+    margin:15px 0;
+    cursor:pointer;
+}
+.gallery>div{
+    float:left;
+    width:20%;
+    position: relative;
+    
+}
+.gallery>div:hover .over{
+    opacity:1;
+    display:block;
+}
+.gallery div>img{
+    height:215px;
+    width:100%;
+    
+}
+.gallery>div>div.over{
+    transition:all 0.5s ease;
+    opacity: 0;
+    
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background: rgba(255, 255, 255, 0.459);
+}
+.gallery .over a{
+    position: absolute;
+    bottom:20px;
+}
+.gallery .over a:nth-child(1){
+    left:20px
+}
+.gallery .over a:nth-child(2){
+    right:20px;
+}

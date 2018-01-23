@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>style-position</title>
+    <style>
+
+        .box1,
+        .box2,
+        .box3 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            opacity: 0.8;
+            /* 
+                position :  static(기본값)
+                            absolute
+                            relative
+                            fixed
+                z-index:숫자 > 절대위치를 갖는 요소들의 앞/뒤 정렬           
+                absolute:절대주소를 갖는 부모(position이 static아닌 요소)기준
+                static 속성이 사라진다 > 요소들을 겹쳐놓고 싶을 때
+
+                relative: static일때의 위치가 기준.(top:0; left:0;)
+                static 속성이 남아있음.(static 요소들이 인식) > absolute 부모 요소
+
+                fixed:창 기준. (고정위치 지정)
+                static 속성이 사라진다.(static요소가 인식을 못 함)
+             */
+             
+        }
+
+        .box1 {
+            background: #f00;
+            z-index: 1;
+        }
+
+        .box2 {
+            background: #ff0;
+            z-index: 2;
+            left: 100px;
+            top: 100px;
+        }
+
+        .box3 {
+            background: #00f;
+            left: 200px;
+            top: 200px;
+            z-index: 1;
+        }
+
+        .wrap {
+            width: 500px;
+            height: 500px;
+            border: 3px solid #0f0;
+            
+            /* margin: 100px auto; */
+            /* position: relative;
+            left: 0;
+            top: 0px; */
+        }
+        .wrap2{
+            width: 500px;
+            height: 500px;
+            border:solid 3px #0ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

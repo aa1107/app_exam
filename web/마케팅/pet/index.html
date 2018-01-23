@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>Ponto Pet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           var idx=0;
+            function movejumbo(){
+                $(".jumbotron>div").eq(idx).fadeIn(800);
+            }
+            function outjumbo(){
+                $(".jumbotron>div").eq(idx).fadeOut(800);
+            }
+            function movebtn(){
+                $(".jumbotron .links a").eq(idx).css("background-color","blue");
+            }
+            function outbtn(){
+                $(".jumbotron .links a").eq(idx).css("background-color","white");
+            }
+            $(".jumbotron .links a").click(function(){
+                if(idx!=$(this).index()){
+                    outjumbo();
+                    outbtn();
+                }
+                idx=$(this).index();
+                movejumbo();
+                movebtn();
+            })
+            $("a.next").click(function(){
+                outbtn();
+                outjumbo();
+                if(idx==4)idx=-1;
+                idx++;
+                movebtn();
+                movejumbo();
+            })
+            $("a.prev").click(function(){
+                outbtn();
+                outjumbo();
+                if(idx==0)idx=5;
+                idx--;
+                movebtn();
+                movejumbo();
+            })
+            var autoslide=setInterval(function(){
+                outbtn();
+                outjumbo();
+                if(idx==4)idx=-1;
+                idx++
+                movebtn();
+                movejumbo();
+            },1000);
+            $("section>div").mouseover(function(){
+                clearInterval(autoslide);
+            })
+            $("section>div").mouseout(function(){
+                autoslide = setInterval(function(){
+                    outbtn();
+                    outjumbo();
+                    if(idx==4)idx=-1;
+                    idx++
+                    movebtn();
+                    movejumbo();
+                },1000);
+            })
+})
+        
+    </script>
+    <style>
+        .prev:hover, .next:hover{
+            text-decoration: none;
+        }
+        .bord{
+            border:3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/logo.PNG" alt="Ponto Pet">
+            </a>
+        </h1>
+        <nav class="nav">
+            <ul class="clearBox">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li>
+                            <a href="#">Our Team</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Our Services</a>
+                    <ul>
+                        <li>
+                            <a href="#" >Grooming</a>
+                        </li>
+                        <li>
+                            <a href="#" >Pet Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#" >Pet Hotel</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sns">
+            <a href="#">
+                <img src="images/sns01.png" alt="페이스북">
+            </a>
+            <a href="#">
+                <img src="images/sns02.png" alt="인스타그램">
+            </a>
+            <a href="#">
+                <img src="images/sns03.png" alt="트위터">
+            </a>
+            <a href="#">
+                <img src="images/sns04.png" alt="유튜브">
+            </a>
+        </div>
+    </header>
+    <section class="jumbotron">
+        <div class="cont1" style="display:block">
+            <p class="txt01">Caring for<br>Your Furry<br>Friends</p>
+            <p class="txt02">I'm a title. Click here to add your own text and edit me.</p>
+        </div>
+        <div class="cont2" style="display:none">
+            <p class="txt01">Caring for<br>Your Furry<br>Friends</p>
+            <p class="txt02">I'm a title. Click here to add your own text and edit me.</p>
+        </div>
+        <div class="cont3" style="display:none">
+            <p class="txt01">Caring for<br>Your Furry<br>Friends</p>
+            <p class="txt02">I'm a title. Click here to add your own text and edit me.</p>
+        </div>
+        <div class="cont4" style="display:none">
+            <p class="txt01">Caring for<br>Your Furry<br>Friends</p>
+            <p class="txt02">I'm a title. Click here to add your own text and edit me.</p>
+        </div>
+        <div class="cont5" style="display:none">
+            <p class="txt01">Caring for<br>Your Furry<br>Friends</p>
+            <p class="txt02">I'm a title. Click here to add your own text and edit me.</p>
+        </div>
+        <div class="links">
+            <a href="javascript:;" data=".cont1" class="active">1</a>
+            <a href="javascript:;" data=".cont2" class="">2</a>
+            <a href="javascript:;" data=".cont3" class="">3</a>
+            <a href="javascript:;" data=".cont4" class="">4</a>
+            <a href="javascript:;" data=".cont5" class="">5</a>
+        </div>
+        <a href="javascript:;" class="prev">&lt;</a>
+			<a href="javascript:;" class="next">&gt;</a>
+    </section>
+    <!-- jumbotron 끝-->
+    <section class="banner container">
+        <h2>We Have Everything Your Pet Needs.
+                <p class="small">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p></h2>
+        <div>
+            <ul class="list clearBox">
+                <!-- 
+                    특수첨자
+                    &nbsp; - 한칸 띄우기
+                    &lt;   - <
+                    &gt;   - >
+                    &amp;  - &
+                    &copy; - copyright
+                 -->
+                <li>
+                    <p class="txt01">Our Story</p>
+                    <p class="txt02">I'm a paragraph. Click here to add<br>your own text and edit me.</p>
+                    <button type="">read more &gt;&gt;</buttom>
+                </li>
+                <li>
+                    <p class="txt01">What We Do</p>
+                    <p class="txt02">I'm a paragraph. Click here to add<br>your own text and edit me.</p>
+                    <button type="">read more &gt;&gt;</buttom>
+                </li>
+                <li>
+                    <p class="txt01">Opening Hours!</p>
+                    <p class="txt02">I'm a paragraph. Click here to add<br>your own text and edit me.</p>
+                    <button type="">read more &gt;&gt;</buttom>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- banner 끝-->
+    <section class="gallery clearBox">
+        <div class="item">
+            <img src="images/pet01.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+        <div class="item">
+            <img src="images/pet02.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+        <div class="item">
+            <img src="images/pet03.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+        <div class="item">
+            <img src="images/pet04.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+        <div class="item">
+            <img src="images/pet05.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+        <div class="item">
+            <img src="images/pet06.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+        <div class="item">
+            <img src="images/pet07.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+        <div class="item">
+            <img src="images/pet08.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+        <div class="item">
+            <img src="images/pet09.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+        <div class="item">
+            <img src="images/pet10.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+        <div class="item">
+            <img src="images/pet11.jpeg" alt="">
+            <div class="over">
+                <a href="#"><i class="material-icons">favorite_border</i></a>
+                <a href="#"><i class="material-icons">share</i></a>
+            </div>
+        </div><!-- // item -->
+    </section>
+    <!-- galler 끝-->
+    <footer class="footer">
+        <div class="container clearBox">
+            <p>&copy; 2023 by Ponto Pet. Proudly created with Wix.com</p>
+            <p>123-456-7890 | 123-456-7890<br>
+                info@mysite.com<br>
+                500 Terry Francois St, San Francisco, CA 94158</p>
+        </div>
+    </footer>
+    <script>
+       
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+@import url(reset.css);
+/* header */
+.container{
+    width:980px;
+    margin:0 auto;
+    
+}
+.material-icons{
+    color:black;
+}
+.material-icons.small{
+    font-size: 18px;
+}
+.material-icons.middle{
+    font-size: 24px;
+}
+.material-icons.big{
+    font-size:36px;
+}
+.header .logo{
+    text-align: center;
+    padding:20px 0 30px;
+}
+.header .nav{
+    text-align:center;
+    background:#efefef;
+}
+.header .nav>ul{
+    
+    display:inline-block;
+}
+.header .nav>ul>li{
+    float:left;
+    position:relative;
+    z-index: 100;
+}
+.header .nav>ul>li>a{
+    display:block;
+    padding:10px 30px;
+       
+    transition:all 0.5s ease-in-out 0.2s;   
+}
+.header .nav>ul>li>ul>li>a{
+    display: block;
+    padding:5px;
+    background:rgba(224, 39, 39, 0.486)    
+}
+.header .nav>ul>li:hover>ul{
+    display: block;
+}
+.header .nav a:hover{
+    color:#0ff;
+}
+.header .nav>ul ul{
+    padding-top:10px;
+    position: absolute;
+    
+    width:100%;
+    left:0;
+    top:30px;
+    display: none;
+}
+/* sns */
+.header .sns{
+    z-index: 100;
+    position:fixed;
+    top:20px;
+    right:30px;
+    width:30px;
+}
+.header .sns a{
+    
+}
+
+/* footer */
+.footer{
+    background:#8fd3e8;
+    padding:50px 0;
+    color:#fff;
+}
+.footer p:nth-child(1){
+    float:left;
+}
+.footer p:nth-child(2){
+    float:right;
+}

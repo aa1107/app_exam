@@ -1,0 +1,43 @@
+@import url(style.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{
+    padding:0; 
+    margin:0;
+    box-sizing: border-box; 
+    vertical-align: top;
+}
+/* 리스트 스타일 */
+li{
+    list-style-type:none;
+    /* list-style-position: inside; */
+    /* list-style-image: url(); */
+}
+/* 링크 스타일 */
+a{
+    text-decoration:none;
+    color:black;
+    /* transition:all 0.2s ease-in-out 0.1s; */
+}
+ul,ol,li{
+    list-style-type:"none";
+}
+.clearBox::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+html, body{
+    font-family: 'Nanum Gothic', sans-serif;
+    /* font-style: italic; */
+    font-style: normal;
+    font-weight:bold;
+    font-size:12px;
+    height: 100%;
+    
+}
+.hidden{text-indent:-9999px;width:1px;height:1px;position:absolute}
+a:hover{text-decoration:underline;color:red}
+/* h2:hover{text-decoration:underline}
+h1:hover{background:yellow} */
+/* a:visited{color:#ccc} */
+/* a:active{background:#00f} */

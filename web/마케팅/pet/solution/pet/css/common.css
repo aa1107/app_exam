@@ -1,0 +1,100 @@
+@import url(reset.css);
+.container{
+    width:980px;
+    margin:0 auto;
+}
+/* icon */
+.material-icons{
+    color:#000;
+}
+.material-icons.small{
+    font-size:18px;
+}
+.material-icons.middle{
+    font-size:24px;
+}
+.material-icons.big{
+    font-size:36px;
+}
+
+/* header */
+.header .logo{
+    text-align: center;
+    padding:20px 0 30px;
+}
+
+.header .nav{
+    background:#efefef;
+    text-align: center;
+}
+.header .nav>ul{
+    /* border:solid 3px #ff0; */
+    display: inline-block;
+    /* width:560px;
+    margin:0 auto; */
+}
+.header .nav>ul>li{
+    float:left;
+    /* border:solid 1px #f00; */
+    position: relative;
+}
+.header .nav>ul>li>a{
+    display: block;
+    padding:10px 60px;
+    /* border:solid 1px #00f; */
+}
+.header .nav a{
+    transition:all 1s ease 0.1s;
+}
+.header .nav a:hover{
+    color:#0ff;
+}
+.header .nav>ul ul{
+    /* border:solid 4px #0f0; */
+    position: absolute;
+    width:100%;
+    left:0;
+    top:30px;  
+    display: none;
+    padding-top:10px;
+    z-index:10;
+}
+.header .nav>ul>li:nth-child(3)>ul>li:nth-child(1) a{
+    padding-top:50px;
+}
+.header .nav>ul>li:nth-child(3)>ul>li:nth-child(3) a{
+    padding-bottom:50px;
+}
+.header .nav>ul ul a{
+    border:solid 1px #f00;
+    display: block;
+    padding:10px 0;
+    background:rgba(0,0,0,0.5);
+}
+.header .nav>ul>li:hover>ul{
+    display: block;
+}
+/* sns */
+.header .sns{
+    width:30px;
+    position: fixed;
+    top:20px;
+    right:30px;
+    z-index:10;
+}
+.header .sns a{
+    display: block;
+}
+
+/* footer */
+.footer{
+    background:#8fd3e8;
+    padding:50px 0;
+    color:#fff;
+}
+.footer p:nth-child(1){
+    float:left;
+}
+.footer p:nth-child(2){
+    float:right;
+}
