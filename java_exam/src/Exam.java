@@ -1,13 +1,13 @@
 import java.util.Scanner;
 public class Exam{
     public static void main(String[] args){
-        Scanner keyboard = new Scanner(System.in);
-        int num=0;
-        while(true){
+        int num=2;
+        while(num<10) {
+            if (num % 5 == 0) {
+                break;
+            }
             System.out.println(num);
             num++;
-            if(num==100)
-                break;
         }
     }
 }
