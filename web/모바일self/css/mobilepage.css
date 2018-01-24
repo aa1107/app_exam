@@ -1,0 +1,106 @@
+/* *{
+    border:1px solid black;
+} */
+.container{
+    width:720px;
+    height: 1280px;
+    background-color: #ccc;
+    position: relative;
+}
+.container .mobilepage{
+    overflow:visible;
+    width:630px;
+    height: 1960px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+}
+.container .mobilepage .closeicon{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    right: 625px;
+    font-size:20px;
+    color:#fff;
+}
+.container .mobilepage .smallimg{
+    text-align: center;
+    float:right;
+    margin-right: 20px;
+    width:120px;
+    font-size:1.4em;
+    border-radius:20px;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+}
+.container .mobilepage .mainCont1{
+    margin: 100px auto 0;
+    width: 200px;
+    height: 200px;
+    background:url(../daelim/panel-mainicon.jpg) no-repeat center;
+}
+.container .mobilepage .headertxt{
+    font-size:2em;
+    text-align: center;
+    line-height: 130px;
+}
+.container .mobilepage .menubtnbar1{
+    height: 180px;
+}
+.container .mobilepage .menubtnbar1 .col-4{
+    border: 1px solid #ccc;
+}
+.container .mobilepage .menubtnbar1 .menubtn{
+    color:#21225a;
+    text-align: center;
+    display:block;
+    padding: 40px 15px 0;
+    height: 180px;
+    font-size:1.3em;
+}
+.container .mobilepage .menubtnbar1 .menubtn img{
+    width:100px;
+    height: 100px;
+}
+.container .mobilepage .menubtnbar1 .menubtn .headermenutxt{
+    font-family: "nanumbarungothic";
+    letter-spacing: 0.05em;
+}
+.container .mobilepage .mainCont2{
+    padding:17px;
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 380px;
+}
+.container .mobilepage .mainCont2 p{
+    color:#333;
+    font-family:"adobe gothic std";
+    height:120px;
+    font-size:1.5em; 
+}
+.container .mobilepage .mainCont2 .sideicon{
+    float:right;
+    font-size:2em;
+    color:#aaa;
+}
+.container .mobilepage .mainCont2 img{
+    display:block;
+    width: 530px;
+    height: 190px;
+    margin:0 auto;
+}
+.container .mobilepage .menubtnbar2 .col-md-12{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.container .mobilepage .menubtnbar2 .col-md-12 .gticon{
+    float: right;
+}
+.container .mobilepage .menubtnbar2 .btntxt{
+    font-family: "nanumbarungothic";
+    color:#333;
+    display:block;
+    padding:40px;
+    font-size:1.8em;
+    letter-spacing: 0.05em;
+}

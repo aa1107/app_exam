@@ -1,0 +1,106 @@
+.visible{
+    display:block;
+}
+.hidden{
+    display:none;
+}
+.container{
+    width:720px;
+}
+.widthbox1{
+    width: 660px;
+    margin:0 auto;
+}
+.container .header{
+    height: 100px;
+    border-bottom:1px solid #ccc;
+}
+.container .header .menubtn{
+    text-align: right;
+}
+.container .header img{
+    width:initial;
+    height: 99px;
+}
+.container .header .logo{
+    text-align: center;
+}
+.container .mainCont1{
+    text-align: center;
+    padding: 85px;
+    height: 430px;
+}
+.container .mainCont1 img{
+    width:320px;
+}
+.container .mainCont2 .idbox,
+.container .mainCont2 .psbox{
+    position: relative;
+}
+
+.container .mainCont2 .idbox .idboxtxt,
+.container .mainCont2 .psbox .psboxtxt{
+    position: absolute;
+    z-index:100;
+    font-size:1.1em;
+    color:#ccc;
+    top:40px;
+    left:180px;
+    cursor: context-menu;
+}
+.container .mainCont2 .psbox .idboxtxt{
+
+}
+.container .mainCont2 input{
+    padding: 35px 20px;
+    width:100%;
+    margin-bottom:30px;
+    font-size:1.5em;
+}
+.container .mainCont2 .logintxt{
+    font-size:1.3em;
+    color:#888;
+    margin-bottom: 70px;
+}
+.container .mainCont2 .logintxt i{
+    color:#ccc;
+    font-size:1.6em;
+}
+.container .mainCont3 .loginbox,
+.container .mainCont3 .membershipbox{
+    height: 100px;
+    font-size:2.6em;
+    padding: 30px;
+    text-align: center;
+    color:#fff;
+}
+.container .mainCont3 .loginbox{
+    background:#262c66;
+    margin-bottom: 30px;
+}
+.container .mainCont3 .membershipbox{
+    background:#32323e;
+    margin-bottom: 40px;
+}
+.container .mainCont4{
+    text-align: center;
+    height: 100px;
+    border-top: 1px solid #ccc;
+}
+.container .mainCont4 .searchid,
+.container .mainCont4 .searchps{
+    position: relative;
+    display:block;
+    font-size:2em;
+    padding:30px 0;
+    color:#999;
+    
+}
+.container .mainCont4 .searchid .border-right{
+    position: absolute;
+    top:20%;
+    right:0;
+    height: 60%;
+    border-right: 1px solid #ccc;
+    width: 1px;
+}
