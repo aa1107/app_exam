@@ -5,14 +5,23 @@
     display:none;
 }
 .container{
-    width:720px;
+    width:100%;
+    position: relative;
+}
+.fadeInbox{
+    z-index: 999;
+    position: absolute;
+    width:100%;
+    height: 1280px;
+    background:url(../daelim/스플래쉬.jpg) no-repeat;
+    background-size:100%;
 }
 .widthbox1{
-    width: 660px;
+    width: 91.666666%;
     margin:0 auto;
 }
 .container .header{
-    height: 100px;
+    overflow: hidden;
     border-bottom:1px solid #ccc;
 }
 .container .header .menubtn{
@@ -20,18 +29,27 @@
 }
 .container .header img{
     width:initial;
-    height: 99px;
+    height: 80px;
 }
 .container .header .logo{
+    margin-top: 0.5em;
     text-align: center;
+}
+.container .header .logo img{
+    width:220px;
+    height:auto;
 }
 .container .mainCont1{
     text-align: center;
-    padding: 85px;
-    height: 430px;
+    padding-top: 8%;
+    padding-bottom:8%;
+    box-sizing: content-box;
 }
 .container .mainCont1 img{
-    width:320px;
+    width:50%;
+}
+.container .mainCont2{
+    padding-bottom: 10%;
 }
 .container .mainCont2 .idbox,
 .container .mainCont2 .psbox{
@@ -44,21 +62,28 @@
     z-index:100;
     font-size:1.1em;
     color:#ccc;
-    top:40px;
-    left:180px;
+    top:30%;
+    left:30%;
     cursor: context-menu;
 }
 .container .mainCont2 .psbox .idboxtxt{
 
 }
-.container .mainCont2 input{
-    padding: 35px 20px;
+.container .mainCont2 input#idinput,
+.container .mainCont2 input#psinput{
+    padding: 25px 15px;
     width:100%;
     margin-bottom:30px;
     font-size:1.5em;
 }
-.container .mainCont2 .logintxt{
-    font-size:1.3em;
+.container .mainCont2 #loginbox{
+    background-color:#f00;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.container .mainCont2 #logintxt{
+    font-size:1.5em;
     color:#888;
     margin-bottom: 70px;
 }

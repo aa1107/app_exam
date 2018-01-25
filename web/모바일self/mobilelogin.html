@@ -19,18 +19,22 @@
             $("#psinput").focus(function(){
                 $(".psboxtxt").hide();
             })
-            if($("#idinput").attr("value")!="아이디"){
-            $("#idinput").blur(function(){
+            setTimeout(function(){
+                $(".fadeInbox").fadeOut(1000);
+            }, 1000);
+            $(".logintxt i").mousedown(function(){
+                $(".logintxt i").css("color","#eee");
             })
-        }
-            $("#psinput").blur(function(){
-                $(".psboxtxt").show();
+            $(".logintxt i").mouseup(function(){
+                $(".logintxt i").css("color","#ccc");
             })
         })
     </script>
 </head>
 <body>
     <div class="container">
+        <div class="fadeInbox">
+        </div>
         <div class="row header clearBox">
             <a class="col-2 leftbtn"><img src="daelim/panel_login01.jpg" alt="뒤로가기"></a>
             <a class="col-8 logo"><img src="daelim/panel_login02.jpg" alt="로고"</a>
@@ -49,7 +53,9 @@
                     <p class="psboxtxt">비밀번호를 입력해주세요.</p>
                     <input type="password"  placeholder="비밀번호" id="psinput">
                 </div>  
-                <p class="logintxt"><i class="material-icons">check_circle</i> &nbsp;자동 로그인</p>
+                <input type="checkbox" id="loginbox">
+                <label for="loginbox" id="logintxt">&nbsp;&nbsp;&nbsp;자동 로그인</label>
+                <!-- <p class="logintxt"><i class="material-icons">check_circle</i> &nbsp;자동 로그인</p> -->
             </form>
         </div>
         <div class="mainCont3 widthbox1">
@@ -62,4 +68,6 @@
         </div>
     </div>
 </body>
+<script>
+</script>
 </html>
