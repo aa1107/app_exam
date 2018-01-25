@@ -1,0 +1,28 @@
+.searchbox{
+    width: 100%;
+}
+.searchbox form{
+    position: relative;
+    width:100%;
+}
+.searchbox form #searchtxtbox{
+    float:left;
+    width: 80%;
+    font-size:1.5em;
+    padding: 1em;
+    height: 80px;
+}
+.searchbox form #searchsubmitbox{
+    float:left;
+    width: 20%;
+    font-size:1.5em;
+    padding: 0.9em;
+    height: 80px;
+}
+.searchbox form i{
+    color:#ccc;
+    font-size:1.9em;
+    position: absolute;
+    right: 25%;
+    top: 25px;
+}
