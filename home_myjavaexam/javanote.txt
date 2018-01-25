@@ -1,0 +1,3 @@
+home_myjavaexam.myjavatest
+
+javapackage.java6_12
