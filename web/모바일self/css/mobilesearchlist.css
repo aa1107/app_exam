@@ -6,6 +6,8 @@
     width:100%;
 }
 .searchbox form #searchtxtbox{
+    letter-spacing: -0.08em;
+    border:none;
     float:left;
     width: 80%;
     font-size:1.5em;
@@ -13,6 +15,9 @@
     height: 80px;
 }
 .searchbox form #searchsubmitbox{
+    border:1px solid #000;
+    font-weight: bolder;
+    background-color:#fff;
     float:left;
     width: 20%;
     font-size:1.5em;
@@ -23,6 +28,97 @@
     color:#ccc;
     font-size:1.9em;
     position: absolute;
-    right: 25%;
+    right: 23%;
     top: 25px;
+}
+.container .headermenubox1{
+    height: 80px;
+    text-align: center;
+    background-color:rgb(38, 44, 102);
+    padding:1em;
+    font-size:1.6em;
+}
+.container .headermenubox1 a{
+    width: 50%;
+    float:left;
+    color:#fff;
+}
+.container .headermenubox1 .lefttxt{
+    position: relative;
+}
+.container .headermenubox1 a:hover{
+    color:#bbb;
+}
+.container .headermenubox1 .lefttxt .borderline{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 100%;
+    border-right:1px solid #fff;
+}
+.container .headermenubox2{
+    font-size:1.1em;
+}
+.container .headermenubox2 .marginbox{
+    margin:0 auto;
+    width:fit-content;
+}
+.container .headermenubox2 a{
+    display: block;
+}
+.container .headermenubox2 a.menuboxbtn{
+    color:#666;
+    float:left;
+    padding:1.7em;
+    padding-left:6vw;
+    padding-right:6vw;
+    height: 80px;
+}
+.container .headermenubox2 a.menuboxbtn:nth-child(1){
+    color:#f00;
+}
+.container .searchmainCont a{
+    display:block;
+}
+.container .searchmainCont .tablebox{
+    border-top:1px solid #ccc;
+    height: 100%;
+    width: 100%;
+    display:table;
+}
+.container .searchmainCont .tablebox>div{
+    vertical-align: middle;
+    height: 100%;
+    display:table-cell;
+}
+.container .searchmainCont .tablebox .searchbox1{
+    width:25%;
+}
+.container .searchmainCont .tablebox .searchbox2{
+    padding:4%;
+    width:50%;
+}
+.container .searchmainCont .tablebox .searchbox3{
+    text-align: center;
+    width:25%;
+}
+.container .searchmainCont .tablebox .searchbox3 img{
+    vertical-align: middle;
+    width:50%;
+}
+.container .searchmainCont .searchbox2 .boxtxt{
+    color:#333;
+    vertical-align: middle;
+}
+.container .searchmainCont .searchbox2 .boxh3txt{
+    line-height: 1.8em;
+    margin:0;
+    width:40vw;
+    font-size:1.5em;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.container .searchmainCont .searchbox2 .boxbottomtxt{
+    color:#aaa;
 }
