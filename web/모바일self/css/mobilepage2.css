@@ -1,0 +1,122 @@
+/* *{
+    border:1px solid black;
+} */
+body{
+    position: relative;
+}
+.rootpage{
+    display:none;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    z-index:100;
+    background-color:rgba(0, 0, 0, 0);
+}
+body div.panelpage{
+    border-left:1px solid #ccc;
+    width:0%;
+    position: absolute;
+    background: #fff;
+    left:110%;
+    top: 0;
+    transition: all 0.7s ease-in-out;
+    white-space: nowrap;
+    z-index:101;
+}
+.container .mobilepage .closeicon{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    right: 100%;
+    
+}
+.container .mobilepage .closeicon i{
+    font-size:3em;
+    color:#333;
+}
+.container .mobilepage .smallimg{
+    text-align: center;
+    margin-left: 70%;
+    width:120px;
+    font-size:1.4em;
+    border-radius:20px;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+}
+.container .mobilepage .mainCont1{
+    padding-top: 100px;
+    margin: 0px auto;
+    width: 200px;
+    height: 200px;
+    background:url(../daelim/panel-mainicon.jpg) no-repeat center;
+}
+.container .mobilepage .headertxt{
+    font-size:2em;
+    text-align: center;
+    line-height: 130px;
+}
+.container .mobilepage .menubtnbar1{
+    height: 180px;
+}
+.container .mobilepage .menubtnbar1 .col-4{
+    border: 1px solid #ccc;
+}
+.container .mobilepage .menubtnbar1 .menubtn{
+    color:#21225a;
+    text-align: center;
+    display:block;
+    padding: 40px 15px 0;
+    height: 180px;
+    font-size:1.3em;
+}
+.container .mobilepage .menubtnbar1 .menubtn img{
+    width:100px;
+    height: 100px;
+}
+.container .mobilepage .menubtnbar1 .menubtn .headermenutxt{
+    font-family: "nanumbarungothic";
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.container .mobilepage .mainCont2{
+    padding:17px;
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.container .mobilepage .mainCont2 p{
+    color:#333;
+    font-family:"adobe gothic std";
+    padding-bottom:10%;
+    font-size:1.5em; 
+}
+.container .mobilepage .mainCont2 .sideicon{
+    float:right;
+    font-size:2em;
+    color:#aaa;
+}
+.container .mobilepage .mainCont2 img{
+    display:block;
+    width: 60%;
+    margin:0 auto;
+}
+.container .mobilepage .menubtnbar2 .col-md-12{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.container .mobilepage .menubtnbar2 .col-md-12 .gticon{
+    float: right;
+}
+.container .mobilepage .menubtnbar2 .btntxt{
+    font-family: "nanumbarungothic";
+    color:#333;
+    display:block;
+    padding:40px;
+    font-size:1.8em;
+    letter-spacing: 0.05em;
+}
+.container .mobilepage .menubtnbar2 .btntxt:hover{
+    color:#666;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/mobilepage2.css">
+    <link rel="stylesheet" href="css/mobilelogin.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".menubtn").click(function(){
+                $(".panelpage").css("left","20%");
+                $(".panelpage").css("width","80%");
+                $(".rootpage").fadeIn(700);
+                $(".rootpage").css("background-color","rgba(0, 0, 0, 0.5)");
+            })
+            $(".closeicon").click(function(){
+                $(".panelpage").css("left","110%");
+                $(".panelpage").css("width","0%");
+                $(".rootpage").css("background-color","rgba(0, 0, 0, 0)");
+                $(".rootpage").fadeOut(400);
+            })
+        })
+    </script>
+</head>
+<body>
+        <div class="rootpage"></div>
+        <div class="container">
+            <div class="row header clearBox">
+                <a href="#" class="col-2 leftbtn"><img src="daelim/panel_login01.jpg" alt="뒤로가기"></a>
+                <a href="#" class="col-8 logo"><img src="daelim/panel_login02.jpg" alt="로고"</a>
+                <a href="#" class="col-2 menubtn"><img src="daelim/panel_login03.jpg" alt="메뉴"></a>
+            </div>
+        </div>
+        <form action="" class="searchnumberForm clearBox">
+            <label for="number" class="hidden">작품번호</label>
+            <input type="text" id="number" name="number" placeholder="작품번호입력">
+            <button type="button" class="numberSearchBtn">검색</button>
+        </form>
+        <div class="tabBox clearBox">
+            <a href="#" class="tab1"><span>층별작품</span></a>
+            <a href="#" class="tab2 active"><span>NFC작품</span></a>
+        </div>
+        <div class="floorBox">
+            <a href="#" class="active">전체</a>
+            <a href="#">1F</a>
+            <a href="#">2F</a>
+            <a href="#">3F</a>
+            <a href="#">4F</a>
+        </div>
+        <ul class="workList">
+            <li>
+                <a href="#">
+                    <div class="img"><img src="daelim/searchpage_img01.jpg" alt=""></div>
+                    <div class="txt">
+                        <span>01</span>
+                        <span>작품 타이틀</span>
+                        <span>작가이름</span>
+                    </div>
+                    <div class="icon"><img src="daelim/searchpage_img06.jpg" alt=""></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="img"><img src="daelim/searchpage_img02.jpg" alt=""></div>
+                    <div class="txt">
+                        <span>02</span>
+                        <span>작품 타이틀</span>
+                        <span>작가이름</span>
+                    </div>
+                    <div class="icon"><img src="daelim/searchpage_img06.jpg" alt=""></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="img"><img src="daelim/searchpage_img03.jpg" alt=""></div>
+                    <div class="txt">
+                        <span>03</span>
+                        <span>작품 타이틀</span>
+                        <span>작가이름</span>
+                    </div>
+                    <div class="icon"><img src="daelim/searchpage_img06.jpg" alt=""></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="img"><img src="daelim/searchpage_img04.jpg" alt=""></div>
+                    <div class="txt">
+                        <span>04</span>
+                        <span>작품 타이틀</span>
+                        <span>작가이름</span>
+                    </div>
+                    <div class="icon"><img src="daelim/searchpage_img06.jpg" alt=""></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="img"><img src="daelim/searchpage_img05.jpg" alt=""></div>
+                    <div class="txt">
+                        <span>05</span>
+                        <span>작품 타이틀</span>
+                        <span>작가이름</span>
+                    </div>
+                    <div class="icon"><img src="daelim/searchpage_img06.jpg" alt=""></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container panelpage">
+            <div class="mobilepage panel">
+                <a href="#" class="closeicon"><i class="material-icons">clear</i></a>
+                <p class="smallimg">KR</p>
+                <div class="mainCont1"></div>
+                <h4 class="headertxt">경명수님 환영합니다</h4>
+                <div class="row menubtnbar1">
+                    <div class="col-4">
+                        <a href="#" class="menubtn">
+                            <img src="daelim/panel_icon01.jpg" alt="사람" style="">
+                            <p class="headermenutxt">마이페이지</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="menubtn">
+                            <img src="daelim/panel_icon02.png" alt="편지봉투" style="">
+                            <p class="headermenutxt">메시지</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="menubtn">
+                            <img src="daelim/panel_icon03.png" alt="쿠폰" style="">
+                            <p class="headermenutxt">쿠폰</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="mainCont2">
+                    <p>멤버십<i class="material-icons sideicon">search</i></p>
+                    <img src="daelim/panel_bacode.png" alt="바코드" style="">
+                </div>
+                <div class="row menubtnbar2">
+                    <div class="col-md-12"><a href="#" class="btntxt">전시소개<span class="gticon">&gt;</span></a></div>
+                    <div class="col-md-12"><a href="#" class="btntxt">전시체험<span class="gticon">&gt;</span></a></div>
+                    <div class="col-md-12"><a href="#" class="btntxt">나만의 사진<span class="gticon">&gt;</span></a></div>
+                    <div class="col-md-12"><a href="#" class="btntxt">라이브러리<span class="gticon">&gt;</span></a></div>
+                    <div class="col-md-12"><a href="#" class="btntxt">이벤트<span class="gticon">&gt;</span></a></div>
+                    <div class="col-md-12"><a href="#" class="btntxt">미술관 소개<span class="gticon">&gt;</span></a></div>
+                    <div class="col-md-12"><a href="#" class="btntxt">미술관 주변<span class="gticon">&gt;</span></a></div>
+                    <div class="col-md-12"><a href="#" class="btntxt">설정<span class="gticon">&gt;</span></a></div>
+                </div>
+            </div>
+            
+        
+</body>
+</html>
