@@ -1,19 +1,27 @@
 import java.util.Scanner;
 public class Exam{
     public static void main(String[] args){
-        //숫자를 저장하는 변수
-        int num=1;
-        //숫자를 1씩 증가 시키면서 6의 배수이고 14의 배수인지 반복하여 무한루프로 검사
-        while(true) {
-            //숫자를 6으로 나누어서 값이 0이고 숫자를 14로 나누어서 값이 0이어야 if부분이 참
-            if (num % 6 == 0&&num%14==0) {
-                //무한루프를 탈출
-                break;
-            }
-            //숫자를 1 증가시킴
-            num++;
-        }
-        // 6과 14의 공배수를 출력
-        System.out.println(num);
+        Scanner keyboard = new Scanner(System.in);
+        Scanner keyboard2 = new Scanner(System.in);
+        System.out.println("프로그램의 시작");
+        System.out.println("안녕하세요 반갑습니다");
+        System.out.println("이름을 입력해 주세요");
+        String myname1 = keyboard.nextLine();
+        System.out.println("나이를 입력해 주세요");
+        int myage1 = keyboard.nextInt();
+        hiEveryone(myname1, myage1);
+        System.out.println("이름을 입력해 주세요");
+        String myname2 = keyboard2.nextLine();
+        System.out.println("나이를 입력해 주세요");
+        int myage2 = keyboard2.nextInt();
+        hiEveryone(myname2, myage2);
+        System.out.println("프로그램의 끝");
     }
+    public static void hiEveryone(String myname, int age)
+    {
+        System.out.println("좋은 아침입니다");
+        System.out.println("제 이름은 "+ myname + "입니다");
+        System.out.println("제 나이는 " + age + "세 입니다");
+    }
+
 }
