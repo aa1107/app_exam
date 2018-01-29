@@ -12,13 +12,10 @@ public class Exam{
             System.out.println("1이상의 정수를 입력해 주십시오.");
             return 0;
         }
-        else if(num==1&num==2)
+        else if(num==1||num==2)
         {
-            num=1;
-            return num;
-        }else if(num>=3) {
-            return (Fibonacci(num - 1) + Fibonacci(num - 2));
+            return 1;
         }
-        return ;
+        return (Fibonacci(num - 1) + Fibonacci(num - 2));
     }
 }
