@@ -1,0 +1,58 @@
+
+.searchNumberForm input{
+    width:80%;
+    height:50px;
+    padding:10px;
+    display: block;
+    float:left;
+    border:solid 1px #cccccc;
+    border-top:none;
+}
+.searchNumberForm button{
+    width:20%;
+    height:50px;
+    padding:10px;
+    display: block;
+    float:left;
+    background:none;
+    border:solid 1px #cccccc;
+    border-top:none;
+    border-left:none;
+}
+.tabBox{
+    background:#262d64;
+}
+.tabBox>a{
+    display: block;
+    float:left;
+    width: 50%;
+    padding:15px 0;
+    text-align: center;
+    color:rgba(255,255,255,0.8);
+    font-weight:400;
+}
+.tabBox>a:first-child span{
+    display: block;
+    border-right:solid 1px #fff;
+}
+.tabBox>a.active{
+    color:rgba(255,255,255,1);
+    font-weight:700;
+}
+
+.floorBox {
+    padding:15px 0;
+    text-align:center;
+    border-bottom:solid 1px #ccc;
+}
+.floorBox a{
+    padding:0 10px;
+}
+.floorBox a:hover{
+    color:#0b68d3;
+}
+.floorBox a.active{
+    color:rgb(255, 81, 0);
+}
+
+

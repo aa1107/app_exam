@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- 패널 기능 css -->
+    <link rel="stylesheet" href="css/slidebars.css">
+    <!-- 아이콘  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- tab 스타일 -->
+    <link rel="stylesheet" href="css/liquid-slider.css">
+    <!-- jquery라이브러리 파일 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- 패널 기능 js -->
+    <script src="js/slidebars.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="./js/jquery.liquid-slider.min.js"></script>  
+    <title>대림미술관</title>
+</head>
+<style>
+    .ls-nav{
+        background:rgb(85, 16, 247);
+        width:100%;
+    }
+    .ls-select-box{
+        display:none !important;
+    }
+    .ls-nav ul{
+        width:100%;
+    }
+    .ls-nav ul li{
+        display:block;
+        width: 50%;
+    }
+    .ls-nav ul li a{
+        width:100%;
+        background:none;
+        text-align: center;
+        color:#fff;
+    }
+</style>
+<body class="no-js">
+    <div canvas=container>
+        <header class="header">
+            <h1 class="logo"><img src="images/logo1.jpg" alt="대림미술관"></h1>
+            <a href="#" class="prevBtn"><i class="material-icons">keyboard_arrow_left</i></a>
+            <a href="#" id="menu" class="menuBtn"><i class="material-icons">menu</i></a>
+        </header>
+        <form action="" class="searchNumberForm clearBox">
+            <label for="number" class="hidden">작품번호</label>
+            <input type="text" id="number" name="number" placeholder="작품번호입력">
+            <button type="button" class="numberSearchBtn">검색</button>
+        </form>
+        <!-- <div class="tabBox clearBox">
+            <a href="#" class="tab1"><span>층별작품</span></a>
+            <a href="#" class="tab2 active"><span>NFC작품</span></a>
+        </div> -->
+        <div class="no-js">
+            <div id="main-slider" class="liquid-slider">
+                
+                <div>
+                        <h2 class="title">층별작품</h2>
+                    <div class="floorBox">
+                        <a href="#" class="active">전체</a>
+                        <a href="#">1F</a>
+                        <a href="#">2F</a>
+                        <a href="#">3F</a>
+                        <a href="#">4F</a>
+                    </div>
+                    <ul class="workList">
+                        <li>
+                            <a href="#">
+                                <div class="img"><img src="images/search_02.jpg" alt=""></div>
+                                <div class="txt">
+                                    <span>01</span>
+                                    <span>작품 타이틀</span>
+                                    <span>작가이름</span>
+                                </div>
+                                <div class="icon"><img src="images/search_01.jpg" alt=""></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"><img src="images/search_03.jpg" alt=""></div>
+                                <div class="txt">
+                                    <span>01</span>
+                                    <span>작품 타이틀</span>
+                                    <span>작가이름</span>
+                                </div>
+                                <div class="icon"><img src="images/search_01.jpg" alt=""></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"><img src="images/search_04.jpg" alt=""></div>
+                                <div class="txt">
+                                    <span>01</span>
+                                    <span>작품 타이틀</span>
+                                    <span>작가이름</span>
+                                </div>
+                                <div class="icon"><img src="images/search_01.jpg" alt=""></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"><img src="images/search_05.jpg" alt=""></div>
+                                <div class="txt">
+                                    <span>01</span>
+                                    <span>작품 타이틀</span>
+                                    <span>작가이름</span>
+                                </div>
+                                <div class="icon"><img src="images/search_01.jpg" alt=""></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"><img src="images/search_06.jpg" alt=""></div>
+                                <div class="txt">
+                                    <span>01</span>
+                                    <span>작품 타이틀</span>
+                                    <span>작가이름</span>
+                                </div>
+                                <div class="icon"><img src="images/search_01.jpg" alt=""></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- tab 1번 끝-->
+                <div> <!-- tab 2번 시작-->
+                    
+                    <div>
+                            <h2 class="title">층별작품</h2>
+                        <div class="floorBox">
+                            <a href="#" class="active">전체</a>
+                            <a href="#">1F</a>
+                            <a href="#">2F</a>
+                            <a href="#">3F</a>
+                            <a href="#">4F</a>
+                        </div>
+                        <ul class="workList">
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="images/search_02.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>01</span>
+                                        <span>작품 타이틀</span>
+                                        <span>작가이름</span>
+                                    </div>
+                                    <div class="icon"><img src="images/search_01.jpg" alt=""></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="images/search_03.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>01</span>
+                                        <span>작품 타이틀</span>
+                                        <span>작가이름</span>
+                                    </div>
+                                    <div class="icon"><img src="images/search_01.jpg" alt=""></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="images/search_04.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>01</span>
+                                        <span>작품 타이틀</span>
+                                        <span>작가이름</span>
+                                    </div>
+                                    <div class="icon"><img src="images/search_01.jpg" alt=""></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="images/search_05.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>01</span>
+                                        <span>작품 타이틀</span>
+                                        <span>작가이름</span>
+                                    </div>
+                                    <div class="icon"><img src="images/search_01.jpg" alt=""></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img"><img src="images/search_06.jpg" alt=""></div>
+                                    <div class="txt">
+                                        <span>01</span>
+                                        <span>작품 타이틀</span>
+                                        <span>작가이름</span>
+                                    </div>
+                                    <div class="icon"><img src="images/search_01.jpg" alt=""></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!--tab 2번 끝-->
+                </div>  <!--tab 끝-->
+            </div>
+        </div>  
+        
+    </div>
+
+
+    <div id="panel"  class="panel" off-canvas="slidebar-2 right shift">
+            <div class="cont01">
+                <button type="button" class="languageBtn js-close-right-slidebar">닫기</button>
+                <span href="#" class="myImg"><img src="images/panel_icon01.gif" alt=""></span>
+                <p class="text">XXX님 환영합니다.</p>
+            </div>
+            <div class="cont02">
+                <a href="#"><img src="images/panel_icon01.gif" alt=""><br>마이페이지</a>
+                <a href="#"><img src="images/panel_icon02.gif" alt=""><br>메시지</a>
+                <a href="#"><img src="images/panel_icon03.gif" alt=""><br>쿠폰</a>
+            </div>
+            <div class="cont03">
+                <h3 class="tit">멤버십</h3>
+                <a href="#" class="search"><i class="material-icons">search</i></a>
+                <p class="barcode"><img src="images/panel_barcode.jpg" alt="바코드"></p>
+            </div>
+            <div class="cont04">
+                <a href="#">
+                    <span>전시소개</span>
+                    <span><i class="material-icons">keyboard_arrow_right</i></span>
+                </a>
+                <a href="#">
+                    <span>전시체험</span>
+                    <span><i class="material-icons">keyboard_arrow_right</i></span>
+                </a>
+                <a href="#">
+                    <span>나만의 사진</span>
+                    <span><i class="material-icons">keyboard_arrow_right</i></span>
+                </a>
+                <a href="#">
+                    <span>라이브러린</span>
+                    <span><i class="material-icons">keyboard_arrow_right</i></span>
+                </a>
+                <a href="#">
+                    <span>이벤트</span>
+                    <span><i class="material-icons">keyboard_arrow_right</i></span>
+                </a>
+                <a href="#">
+                    <span>미술관 소개</span>
+                    <span><i class="material-icons">keyboard_arrow_right</i></span>
+                </a>
+                <a href="#">
+                    <span>미술관 주변</span>
+                    <span><i class="material-icons">keyboard_arrow_right</i></span>
+                </a>
+                <a href="#">
+                    <span>설정</span>
+                    <span><i class="material-icons">keyboard_arrow_right</i></span>
+                </a>
+            </div>
+        </div>
+        <script>
+        $('#main-slider').liquidSlider();
+        var controller = new slidebars();
+        controller.init();
+        $( '#menu' ).on( 'click', function ( event ) {
+            event.stopPropagation();
+            controller.open( 'slidebar-2' );
+        } );
+        $( '.js-close-right-slidebar' ).on( 'click', function ( event ) {
+        event.stopPropagation();
+        controller.close( 'slidebar-2' );
+    } );
+    //tab 기능
+    
+        </script>
+</body>
+</html>
