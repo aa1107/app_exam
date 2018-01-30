@@ -1,19 +1,21 @@
 import java.util.Scanner;
 public class Exam{
     public static void main(String[] args){
-        int result=adder(4,5);
-        System.out.println("4와 5의 합 : "+result);
-        System.out.println("3.5의 제곱 : "+square(3.5));
+        Scanner keyboard = new Scanner(System.in);
+        int inputnum1 = keyboard.nextInt();
+        int result = Fibonacci(inputnum1);
+        System.out.println(result);
     }
-
-    public static int adder(int num1, int num2)
+    public static int Fibonacci(int num)
     {
-        int addResult=num1+num2;
-        return addResult;
-    }
-
-    public static double square(double num)
-    {
-        return num*num;
+        if(num<=0){
+            System.out.println("1이상의 정수를 입력해 주십시오.");
+            return 0;
+        }
+        else if(num==1||num==2)
+        {
+            return 1;
+        }
+        return (Fibonacci(num - 1) + Fibonacci(num - 2));
     }
 }
