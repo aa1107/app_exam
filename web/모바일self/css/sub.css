@@ -1,0 +1,88 @@
+.searchnumberForm input{
+    width:80%;
+    height: 50px;
+    padding: 10px;
+    display:block;
+    float:left;
+    border:1px solid #ccc;
+    border-top:none;
+}
+.searchnumberForm button{
+    width: 20%;
+    height: 50px;
+    display:block;
+    float:left;
+    background:none;
+    border:1px solid #ccc;
+    border-top:none;
+    border-left:none;
+}
+.tabBox{
+    background: #262d64;
+}
+.tabBox>a{
+    display:block;
+    float:left;
+    width: 50%;
+    padding:15px 0;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+.tabBox>a:first-child span{
+    display:block;
+    border-right:1px solid #fff;
+}
+.tabBox>a.active span{
+    color:rgba(255, 255, 255, 1);
+    font-weight: 700;
+}
+.floorBox{
+    padding: 15px 0;
+    text-align: center;
+    border-bottom:1px solid #ccc;
+}
+.floorBox a{
+    padding:0 10px;
+}
+.floorBox a:hover{
+    color:#0b68d3;
+}
+.floorBox a.active{
+    color:rgb(255,81,0);
+}
+.workList>li>a{
+    display:table;
+    width:100%;
+}
+.workList>li>a>div{
+    display:table-cell;
+    vertical-align: middle;
+}
+.workList>li>a>div:nth-child(1){
+    width:25%;
+}
+.workList>li>a>div:nth-child(2){
+    width:65%;
+    padding-left: 20px;
+}
+.workList>li>a>div:nth-child(3){
+    padding-right: 10px;
+    width:10%;
+}
+.workList span{
+    display:block;
+}
+.workList span:nth-child(1){
+    color:#666;
+}
+.workList span:nth-child(2){
+    font-size:1.3em;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+.workList span:nth-child(3){
+    color:#999;
+    font-size:0.8em;
+    font-weight: 400;
+}
