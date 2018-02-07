@@ -1,0 +1,121 @@
+.container{
+    width:1200px;
+}
+.maincontainer0207 .header{
+    margin:0 auto;
+    background:#fff;
+}
+.maincontainer0207 .header .navbox{
+    font-size:16px;
+    width:fit-content;
+    height: 70px;
+}
+.maincontainer0207 .header .navbox>a{
+    display:block;
+    float:left;
+}
+.maincontainer0207 .header .navbox .logo{
+    padding:6px;
+}
+.maincontainer0207 .header .navbox .navigation {
+    float:left;
+}
+.maincontainer0207 .header .navbox .navigation>li{
+    float:left;
+    position: relative;
+}
+.maincontainer0207 .header .navbox .navigation>li a{
+    display:block;
+    padding: 1.7em;
+}
+.maincontainer0207 .header .navbox .navigation>li>ul{
+    display:none;
+}
+.maincontainer0207 .mainCont1{
+    height: 480px;
+    background-image: url(../images/schilthorn-3033448_1280.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 25%;
+}
+.maincontainer0207 .mainCont1{
+    position: relative;
+    text-align: center;
+}
+.maincontainer0207 .mainCont1 .num1_mainCont1title{
+    color:#fff;
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Haan YGodic 230";
+    font-size:3.8em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+.maincontainer0207 .mainCont1 .num1_mainCont1txt{
+    color:#fff;
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "nanum gothic";
+    font-size:2em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+.maincontainer0207 .mainCont1 .num1_mainCont1searchbox{
+    position: absolute;
+    top:65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.maincontainer0207 .mainCont1 .num1_mainCont1searchbox form{
+    position: relative;
+}
+.maincontainer0207 .mainCont1 .num1_mainCont1searchbox form input::placeholder{
+    font-weight: bold;
+    color:rgb(87, 87, 87);
+}
+.maincontainer0207 .mainCont1 .num1_mainCont1searchbox form .num1_mainCont1searchbar{
+    color:#000;
+    width:450px;
+    font-size:1.2em;
+    padding: 10px;
+    background:rgba(255, 255, 255, 0.4);
+    border:0.5px solid #fff;
+}
+.maincontainer0207 .mainCont1 .num1_mainCont1searchbox form .num1_mainCont1btn{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+.maincontainer0207 .mainCont1 .num1_mainCont1searchbox form .num1_mainCont1btn i{
+    font-size:2.3em;
+    color:#555;
+}
+.maincontainer0207 .mainCont1 .num1_mainCont1searchbox .num1_recommendtxt{
+    width:100%;
+    padding:10px;
+    text-align: left;
+    color:rgb(255, 255, 255);
+    background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1))
+}
+.maincontainer0207 .num2_mainCont2{
+    margin:0 auto;
+    padding-top: 30px;
+}
+.maincontainer0207 .num2_mainCont2 ul{
+    vertical-align: bottom;
+    width:fit-content;
+}
+.maincontainer0207 .num2_mainCont2 ul li{
+    float:left;
+}
+.maincontainer0207 .num2_mainCont2 ul li:first-child{
+    font-size:1.6em;
+    color:#ff5221;
+    
+}
+.maincontainer0207 .num2_mainCont2 ul li a{
+    display:block;
+    padding: 10px;
+}
