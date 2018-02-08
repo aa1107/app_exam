@@ -142,18 +142,18 @@
     font-size:1.6em;
     color:#ff5221;
 }
-.maincontainer0207 .num2_mainCont2 ul{
-    vertical-align: bottom;
+.maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1{
+    width:285px;
+    margin-right:20px;
+    float: left;
 }
-.maincontainer0207 .num2_mainCont2 ul li{
-    font-size:0.9em;
-    float:left;
+.maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1:last-child{
+    margin-right: 0;
 }
-.maincontainer0207 .num2_mainCont2 ul li:first-child{
-    
-    
+.maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1 .Sbimgbox2 img{
+    width: 100%;
 }
-.maincontainer0207 .num2_mainCont2 ul li a{
-    display:block;
-    padding: 10px;
+.maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1 .Sbimgbox2 .sbboxtxt{
+    padding: 12px;
+    text-shadow:0 0 0 #333;
 }
