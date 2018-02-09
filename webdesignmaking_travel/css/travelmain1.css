@@ -102,7 +102,7 @@
 }
 .maincontainer0207 .mainCont1 .num1_mainCont1searchbox form .num1_mainCont1btn i{
     font-size:2.3em;
-    color:#555;
+    color:#ffc421;
 }
 .maincontainer0207 .mainCont1 .num1_mainCont1searchbox .num1_recommendtxt{
     width:100%;
@@ -111,10 +111,18 @@
     color:rgb(255, 255, 255);
     background:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1))
 }
+.maincontainer0207 .mainCont1 .num1_mainCont1searchbox .num1_recommendtxt a{
+    color:#fff;
+}
+.maincontainer0207 .mainCont2Box{
+    height: 450px;
+    background:#ebebeb;
+}
 .maincontainer0207 .num2_mainCont2{
     color:#333;
     margin:0 auto;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 .maincontainer0207 .num2_mainCont2 .Cont2nav0208{
     width:fit-content;
@@ -126,7 +134,13 @@
     padding:10px;
     font-weight: lighter;
 }
-.maincontainer0207 .num2_mainCont2 .Cont2nav0208>span{
+.maincontainer0207 .num2_mainCont2 .Cont2nav0208 a:hover{
+    color:rgb(255,196,034);
+}
+.maincontainer0207 .num2_mainCont2 .Cont2nav0208 a:first-child:hover{
+    color:#ff5221;
+}
+/* .maincontainer0207 .num2_mainCont2 .Cont2nav0208>span{
     
     height:80%;
     border-right:1px solid black;
@@ -135,7 +149,7 @@
     
     height:80%;
     border-right:1px solid black;
-}
+} */
 .maincontainer0207 .num2_mainCont2 .Cont2nav0208 .Cont2tit{
     padding-top: 0;
     font-weight: 700;
@@ -143,6 +157,7 @@
     color:#ff5221;
 }
 .maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1{
+    position: relative;
     width:285px;
     margin-right:20px;
     float: left;
@@ -154,6 +169,156 @@
     width: 100%;
 }
 .maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1 .Sbimgbox2 .sbboxtxt{
+    position: absolute;
+    height: 95px;
+    width:100%;   
+    background:#fff;
     padding: 12px;
     text-shadow:0 0 0 #333;
+    overflow: hidden;
+    
+}
+.maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1 .Sbimgbox2 .sbboxtxt span{
+    display:block;
+    color:#666;
+    font-size:14px;
+    text-shadow: none;
+    overflow: hidden;
+}
+.maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1:hover .sbboxtxt{
+    
+    height:200px;
+}
+.maincontainer0207 .mainCont3_0209{
+    position: relative;
+    padding: 20px 0 20px;
+    margin:0 auto;
+}
+.maincontainer0207 .mainCont3_0209 .leftarrow{
+    color:#666;
+    font-size:4em;
+    position: absolute;
+    top:50%;
+    left:-6%;
+    transform: translate(-50%,-50%);
+}
+.maincontainer0207 .mainCont3_0209 .leftarrow a,
+.maincontainer0207 .mainCont3_0209 .rightarrow a{
+    color:#666;
+}
+.maincontainer0207 .mainCont3_0209 .rightarrow{
+    color:#666;
+    font-size:4em;
+    position: absolute;
+    top:50%;
+    right:-6%;
+    transform: translate(0,-50%);
+}
+.maincontainer0207 .mainCont3_0209 .Cont3tit{
+    font-weight: 700;
+    font-size:1.6em;
+    color:#ff5221;
+    padding: 10px;
+}
+.maincontainer0207 .mainCont3_0209 .Cont3imgbox{
+    width:380px;
+    margin-right:20px;
+    margin-bottom:20px;
+    float: left;
+}
+.maincontainer0207 .mainCont3_0209 .Cont3imgbox:hover img{
+    opacity: 0.7;
+}
+.maincontainer0207 .mainCont3_0209 .Cont3imgbox img{
+    z-index:0;
+    transition:all 0.5s ease-out;
+    width:100%;
+}
+.maincontainer0207 .mainCont3_0209 .Cont3imgbox:last-child{
+    margin-right: 0;
+}
+.maincontainer0207 .mainCont4_0209{
+    height: 380px;
+    background: url("../images/Cont4img.jpg") no-repeat;
+    background-size:cover;
+    background-position:center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.302);
+}
+.maincontainer0207 .mainCont5_0209{
+    padding-top:50px;
+    margin:0 auto;
+    padding-bottom:50px;
+}
+.maincontainer0207 .mainCont5_0209 .Cont5tit{
+    font-weight: 700;
+    font-size:1.6em;
+    color:#ff5221;
+    padding: 10px;
+}
+.maincontainer0207 .mainCont5_0209 .Cont5VideoBox{
+    float:left;
+}
+.maincontainer0207 .mainCont5_0209 .Cont5txtBox{
+    position: relative;
+    font-size:14px;
+    width:450px;
+    height:422px;
+    float:left;
+    padding:0 20px;
+}
+.maincontainer0207 .mainCont5_0209 .Cont5txtBox .reptxt{
+    line-height: 17px;
+    padding-bottom:3px;
+}
+.maincontainer0207 .mainCont5_0209 .Cont5txtBox span{
+    font-weight: 500;
+}
+.maincontainer0207 .mainCont5_0209 .Cont5txtBox form{
+    width:100%;
+    position: absolute;
+    bottom:0;
+    left: 20px;
+}
+.maincontainer0207 .mainCont5_0209 .Cont5txtBox form input{
+    padding: 10px;
+    width:70%;
+}
+.maincontainer0207 .mainCont5_0209 .Cont5txtBox form input::placeholder{
+    font-size:14px;
+}
+footer{
+    background:#eeeeee;
+}
+footer .footer .footerBox1{
+    margin:0 auto;
+}
+footer .footer .footerBox1 .footertxt1 a{
+    font-size:14px;
+    display:inline-block;
+    padding: 10px;
+    color:#888;
+    text-align: left;
+}
+footer .footer .footerBox1 .footertxt1 a:hover{
+    color:#555;
+}
+footer .footer .footerBox2{
+    padding: 20px;
+    background:#dddddd;
+}
+footer .footer .footerBox2 .footertxtBox2{
+    font-size:12px;
+    color:#666;
+    margin:0 auto;
+}
+footer .footer .footerBox2 .footertxtBox2 .footertxt2{
+    float:left;
+}
+footer .footer .footerBox2 .footertxtBox2 .footerimgbox{
+    float:left;
+    text-align: center;
+}
+footer .footer .footerBox2 .footertxtBox2 .footerimgbox img{
+    width:50%;
+    padding: 10px;
 }
