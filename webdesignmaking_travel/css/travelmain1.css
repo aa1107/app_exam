@@ -159,8 +159,10 @@
 .maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1{
     position: relative;
     width:285px;
+    height:335px;
     margin-right:20px;
     float: left;
+    overflow: hidden;
 }
 .maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1:last-child{
     margin-right: 0;
@@ -169,8 +171,10 @@
     width: 100%;
 }
 .maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1 .Sbimgbox2 .sbboxtxt{
-    position: absolute;
-    height: 95px;
+    transition: all 0.5s;
+    position: relative;
+    top:0px;
+    height: 216px;
     width:100%;   
     background:#fff;
     padding: 12px;
@@ -186,8 +190,7 @@
     overflow: hidden;
 }
 .maincontainer0207 .num2_mainCont2 .sectionbox0208 .Sbimgbox1:hover .sbboxtxt{
-    
-    height:200px;
+    top:-100px;
 }
 .maincontainer0207 .mainCont3_0209{
     position: relative;
@@ -219,6 +222,9 @@
     font-size:1.6em;
     color:#ff5221;
     padding: 10px;
+}
+.maincontainer0207 .mainCont3_0209 .Cont3imgslidebox0212_1{
+    position: relative;
 }
 .maincontainer0207 .mainCont3_0209 .Cont3imgbox{
     width:380px;
