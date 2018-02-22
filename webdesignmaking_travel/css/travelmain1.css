@@ -123,6 +123,8 @@
     margin:0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
+    height: 439px;
+    position: relative;
 }
 .maincontainer0207 .num2_mainCont2 .Cont2nav0208{
     width:fit-content;
@@ -133,6 +135,7 @@
     padding-top: 10px;
     padding:10px;
     font-weight: lighter;
+    color:#333;
 }
 .maincontainer0207 .num2_mainCont2 .Cont2nav0208 a:hover{
     color:rgb(255,196,034);
@@ -151,7 +154,9 @@
     border-right:1px solid black;
 } */
 .maincontainer0207 .num2_mainCont2 .Cont2nav0208 .Cont2tit{
+    float:left;
     padding-top: 0;
+    padding-right: 10px;
     font-weight: 700;
     font-size:1.6em;
     color:#ff5221;
@@ -193,9 +198,14 @@
     top:-100px;
 }
 .maincontainer0207 .mainCont3_0209{
+
     position: relative;
     padding: 20px 0 20px;
     margin:0 auto;
+    height: 560px;
+}
+.maincontainer0207 .mainCont3_0209 .ContFixedBox{
+    overflow: hidden;
 }
 .maincontainer0207 .mainCont3_0209 .leftarrow{
     color:#666;
@@ -223,8 +233,11 @@
     color:#ff5221;
     padding: 10px;
 }
-.maincontainer0207 .mainCont3_0209 .Cont3imgslidebox0212_1{
+.maincontainer0207 .mainCont3_0209 .Cont3slideposibox{
+    width:1200px;
+    height:466px;
     position: relative;
+    left:0vw;
 }
 .maincontainer0207 .mainCont3_0209 .Cont3imgbox{
     width:380px;
@@ -243,12 +256,37 @@
 .maincontainer0207 .mainCont3_0209 .Cont3imgbox:last-child{
     margin-right: 0;
 }
+.maincontainer0207 .mainCont3_0209 .Cont3slideposibox .Cont3imgslidebox0212_0{
+    width:1200px;
+    position: absolute;
+    left:-100vw;
+}
+.maincontainer0207 .mainCont3_0209 .Cont3slideposibox .Cont3imgslidebox0212_1{
+    width:1200px;
+    position: absolute;
+    left:0vw;
+}
+.maincontainer0207 .mainCont3_0209 .Cont3slideposibox .Cont3imgslidebox0212_2{
+    width:1200px;
+    position: absolute;
+    left:100vw;
+}
+.maincontainer0207 .mainCont3_0209 .Cont3slideposibox .Cont3imgslidebox0212_3{
+    width:1200px;
+    position: absolute;
+    left:200vw;
+}
+.maincontainer0207 .mainCont3_0209 .Cont3slideposibox .Cont3imgslidebox0212_4{
+    width:1200px;
+    position: absolute;
+    left:300vw;
+}
 .maincontainer0207 .mainCont4_0209{
-    height: 380px;
-    background: url("../images/Cont4img.jpg") no-repeat;
-    background-size:cover;
-    background-position:center;
+    height:fit-content;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.302);
+}
+.maincontainer0207 .mainCont4_0209 img{
+    width:100%;
 }
 .maincontainer0207 .mainCont5_0209{
     padding-top:50px;

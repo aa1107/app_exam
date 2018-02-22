@@ -1,20 +1,19 @@
 import java.util.Scanner;
 
 public class MyTest0212 {
-    public static void main(String[] args) {
-        Math1 k = new Math1();
-        k.adder1(3,4);
-        k.adder1(3,4,5);
+    public static void main(String[] args) throws MyException {
+        MyTest0212 temp = new MyTest0212();
+        System.out.println(temp.Math1(1,20));
     }
-    public static class Math1{
+    public int Math1(int a, int b) throws MyException{
+        int sum=0;
 
-        public void adder1(int num1, int num2){
-            System.out.println(num1+num2);
+        sum = a+b;
+        if(a+b>10){
+            throw new MyException("에러발생");
         }
 
-        public void adder1(int num1, int num2, int num3){
-            System.out.println(num1+num2+num3);
-        }
+        return sum;
     }
 }
 
