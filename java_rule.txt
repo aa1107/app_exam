@@ -1,0 +1,13 @@
+﻿class MyClass class ProgrammingBook  
+대문자로 시작
+둘 이상의 단어가 묶여서 하나의 이름 구성 시 새 단어는 대문자로 시작
+
+int addYourMoney(int money), int yourAge 
+소문자로 시작
+둘 이상의 단어가 묶여서 하나의 이름 구성 시 새 단어는 대문자로 시작
+
+final int COLOR=7, final int COLOR_RAINBOW=7
+전부 대문자로 표현
+둘 이상의 단어가 묶여서 하나의 이름 구성 시 두 단어 사이에 _ 삽입
+
+인스턴스를 생성하지 않아도 static 메소드는 호출 가능하다
