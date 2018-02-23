@@ -1,3 +1,7 @@
+
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.LinkedList;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseListener;
@@ -6,10 +10,15 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Exam{
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws ClassCastException{
+        int a=10;
+        if(a==10){
+            throw new ClassCastException();
+        }
+
        // jframe 객체 생성
         JFrame frame = new JFrame("title");
         //frame 크기 설정
@@ -26,7 +35,6 @@ public class Exam{
             }
         };
         frame.addWindowListener(listener);
-
         // 버튼 객체를 생성
         JButton btn1 = new JButton("My Button");
         MouseListener listener1 = new MouseEventHandler();
