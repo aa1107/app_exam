@@ -28,7 +28,7 @@ public class MainTest1 {
                     value = (Integer)map.get(name);
                     map.put(name, ++value);
                     isExisted=true;
-                    break;
+
                 }
             }//end while
 
