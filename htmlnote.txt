@@ -27,3 +27,6 @@ https://en.todoist.com/app?#agenda%2Foverdue%2C%20today
 수행평가(2.9 3.9)
 
 해더css 푸터css 따로 제작
+
+xml선언
+<?xml version="1.0" encoding="EUC-KR" ?>
