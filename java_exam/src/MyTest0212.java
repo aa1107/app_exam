@@ -1,19 +1,35 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MyTest0212 {
-    public static void main(String[] args) throws MyException {
-        MyTest0212 temp = new MyTest0212();
-        System.out.println(temp.Math1(1,20));
-    }
-    public int Math1(int a, int b) throws MyException{
-        int sum=0;
+    public static void main(String[] args) {
+        int i=0;
+        for(i=0;i<5;i++){
 
-        sum = a+b;
-        if(a+b>10){
-            throw new MyException("에러발생");
         }
+        System.out.println(i);
+    }
 
-        return sum;
+    static public String myTempFunc(int temp){
+        return Integer.toString(temp);
+    }
+
+    static class MyTempClass{
+        int one;
+        int two;
+
+        /*@Override
+        public String toString() {
+            return (one+", "+two);
+        }*/
+
+        public MyTempClass(int one, int two) {
+            this.one = one;
+            this.two = two;
+        }
     }
 }
 

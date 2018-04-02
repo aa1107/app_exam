@@ -7,7 +7,7 @@
 }
 .maincontainer0207 .header .logobox{
     width:fit-content;
-    display:block;
+    display:inline-block;
     margin:0 auto;
 }
 .maincontainer0207 .header .navbox{
@@ -325,7 +325,7 @@
 }
 .maincontainer0207 .mainCont5_0209 .Cont5txtBox form input{
     padding: 10px;
-    width:70%;
+    width:100%;
 }
 .maincontainer0207 .mainCont5_0209 .Cont5txtBox form input::placeholder{
     font-size:14px;

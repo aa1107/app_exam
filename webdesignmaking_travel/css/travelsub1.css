@@ -6,10 +6,47 @@
     
     background:#fff;
 }
+.maincontainer0207 .header .headerbox{
+    width:1000px;
+    margin:20px auto;
+}
 .maincontainer0207 .header .logobox{
+    float: left;
     width:fit-content;
     display:block;
     margin:0 auto;
+}
+.maincontainer0207 .num1_mainCont1searchbox{
+    margin-top:7px;
+    float: left;
+}
+.maincontainer0207 form{
+    
+    
+    margin-left: 40px;
+    width:fit-content;
+    position: relative;
+}
+.maincontainer0207 form input::placeholder{
+    font-weight: bold;
+    color:rgb(87, 87, 87);
+}
+.maincontainer0207 form .num1_mainCont1searchbar{
+    color:#000;
+    width:450px;
+    font-size:1.2em;
+    padding: 10px;
+    background:rgba(255, 255, 255, 0.4);
+    border:1.5px solid #ffc421;
+}
+.maincontainer0207 form .num1_mainCont1btn{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+.maincontainer0207 form .num1_mainCont1btn i{
+    font-size:2.3em;
+    color:#ffc421;
 }
 .maincontainer0207 .header .navbox{
     width:100%;
@@ -43,7 +80,9 @@
 .maincontainer0207 .header .navbox .navigation>li>ul{
     display:none;
 }
-
+.container_1_0203 .Cont1tit0306{
+    display: inline-block;
+}
 footer{
     background:#eeeeee;
 }
