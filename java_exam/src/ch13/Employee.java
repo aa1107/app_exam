@@ -3,10 +3,10 @@ package ch13;
 import java.io.Serializable;
 
 public class Employee implements Serializable{
-        String name;
-        String addr;
-        transient String jumin;
-        String phone;
+    String name;
+    String addr;
+    transient String jumin;
+    String phone;
 
     public Employee(String name, String addr, String jumin, String phone) {
         this.name = name;

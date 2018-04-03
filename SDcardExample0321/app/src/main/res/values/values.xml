@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movietitle">
+        <item>@drawable/black</item>
+        <item>@drawable/goonghap</item>
+        <item>@drawable/meetnow</item>
+        <item>@drawable/monday</item>
+    </string-array>
+</resources>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css 스타일-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/travelmain1.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <!-- 부트스트랩 -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
+    <!-- 구글 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumpenscript.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+    <!-- 제이쿼리 -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var index=0;
+            var autosliding;
+            var tempidx = 0;
+            function movejumbo(){
+                $(".Cont3slideposibox").stop();
+                $(".Cont3slideposibox").animate({marginLeft:index*-100+"vw"},500);
+            } 
+            function jumboreset(){
+                if(index==3){
+                    index=0;
+                    $(".Cont3slideposibox").css("margin-left","0");
+                }else if(index==-1){
+                    index=2;
+                    $(".Cont3slideposibox").css("margin-left","-200vw");
+                }
+            }
+            function removebackground(){
+                $(".linkbox>div").css("background-color","#fff");
+            }
+            function movebackground(){
+                $(".linkbox>div").eq(index).css("background-color","#8fcdf4");
+                if(index==3){
+                    $(".linkbox>div").eq(0).css("background-color","#8fcdf4");
+                }else if(index==-1){
+                    $(".linkbox>div").eq(2).css("background-color","#8fcdf4");
+                }
+            }
+            $(".rightarrow").click(function(){
+
+                clearInterval(autosliding);
+                autosliding = setInterval(nextmove,3000);
+                removebackground()
+                jumboreset();
+                index++;
+                movejumbo();
+                movebackground();
+            })
+            $(".leftarrow").click(function(){
+                clearInterval(autosliding);
+                autosliding = setInterval(nextmove,3000);
+                removebackground()
+                jumboreset();
+                index--;
+                movejumbo();
+                movebackground();
+            })
+            $(".linkbox>div").click(function(){
+                clearInterval(autosliding);
+                autosliding = setInterval(nextmove,3000);
+                removebackground()
+                index=$(this).index();
+                movejumbo();
+                movebackground();
+            })
+            autoset();
+            function nextmove(){
+                removebackground()
+                jumboreset();
+                index++;
+                movejumbo();
+                movebackground();
+            }
+            function autoset(){
+                autosliding = setInterval(nextmove,3000)
+            }
+            $(".Cont3slideposibox").mouseover(function(){
+                    clearInterval(autosliding);
+            })
+            $(".Cont3slideposibox").mouseout(function(){
+                autosliding = setInterval(nextmove,3000);
+            })
+            
+            $(".Cont2nav0208>a").mouseover(function(){
+                $()
+                $(".num2_mainCont2").eq(tempidx).css("display","hidden");
+                tempidx = $(this).index()-1;
+                $(".num2_mainCont2").eq(tempidx).css("display","block");
+            })
+        })
+    </script>
+    <title>메인</title>
+    <!-- 내부 스타일 -->
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="maincontainer0207">
+            <div class="header">
+                <a href="#" class="logobox"><img src="images/main_1_logo.jpg" alt="greentour" class="logo">
+                </a>
+                    <div class="navbox">
+                        <ul class="navigation">
+                            <li><a href="#">여행정보</a>
+                                <ul>
+                                    <li><a href="#">인기여행도시</a></li>
+                                    <li><a href="#">전문가 여행기</a></li>
+                                    <li><a href="#">테마여행 동영상</a></li>
+                                    <li><a href="#">여행준비</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">커뮤니티</a>
+                                <ul>
+                                    <li><a href="#">전체 글 보기</a></li>
+                                    <li><a href="#">여행후기&amp;팁</a></li>
+                                    <li><a href="#">Q&amp;A</a></li>
+                                    <li><a href="#">여행 상품 상담</a></li>
+                                    <li><a href="#">찰칵!인증샷</a></li>
+                                    <li><a href="#">아무거나 토크</a></li>
+                                    <li><a href="#">내 글 모아보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">가이드북</a>
+                                <ul>
+                                    <li><a href="#">가이드북/맵북</a></li>
+                                    <li><a href="#">여행자료실</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">티켓/투어</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">오사카</a></li>
+                                    <li><a href="#">도쿄</a></li>
+                                    <li><a href="#">싱가포르</a></li>
+                                    <li><a href="#">후쿠오카</a></li>
+                                    <li><a href="#">홍콩</a></li>
+                                    <li><a href="#">타이베이</a></li>
+                                    <li><a href="#">제주도</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">항공</a>
+                                <ul>
+                                    <li><a href="#">최저가 항공권 검색</a></li>
+                                    <li><a href="#">특가항공</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">호텔</a>
+                                <ul>
+                                    <li><a href="#">최저가 호텔 검색</a></li>
+                                    <li><a href="#">추천숙박</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">무료 이벤트</a>
+                                <ul>
+                                    <li><a href="#">진행 중 이벤트</a></li>
+                                    <li><a href="#">당첨자 발표</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        <div class="mainCont1">
+            <h1 class="num1_mainCont1title">어디로 갈까?</h1>
+            <p class="num1_mainCont1txt">지금 당장 여행을 계획하세요!</p>
+            <div class="num1_mainCont1searchbox">
+                <form action="" method="post"> 
+                    <input type="search" placeholder="나홀로 유럽여행" class="num1_mainCont1searchbar">
+                    <button type="submit" class="num1_mainCont1btn"><i class="material-icons">search</i></button>
+                </form>
+                <p class="num1_recommendtxt">인기검색어 : <a href="#">말라카</a> <a href="#">여자끼리</a> <a href="#">오사카</a> <a href="#">유럽여행</a></p>
+            </div>
+        </div>
+        <div class="mainCont2Box">
+            <div class="num2_mainCont2 container">
+                <div class="Cont1Box_1">
+                    <p class="Cont2nav0208 clearBox">
+                        <span class="Cont2tit">인기상품</span>
+                        <a href="#" class="Cont2list1">동남아</a>
+                        <a href="#" class="Cont2list2">중국<span></span></a>
+                        <a href="#" class="Cont2list3">홍콩<span></span></a>
+                        <a href="#" class="Cont2list4">하이난<span></span></a>
+                        <a href="#" class="Cont2list5">일본<span></span></a>
+                        <a href="#" class="Cont2list6">남태평양<span></span></a>
+                        <a href="#" class="Cont2list7">유럽<span></span></a>
+                        <a href="#" class="Cont2list8">미주<span></span></a>
+                        <a href="#" class="Cont2list9">중남미<span></span></a>
+                        <a href="#" class="Cont2list10">국내 테마<span></span></a>
+                    </p>
+                    <div class="sectionbox0208 clearBox">
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/bankok0309.jpg" alt="방콕파타야"><p class="sbboxtxt">방콕/파타야<br>노쇼핑&amp;노옵션 5일<br><br><span>쇼핑센터 방문은 ZERO! 방콕/파타야의 메인 선택관광 5가지를 포함한 노쇼핑&노옵션 상품입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/sebu0309.jpg" alt="세부"><p class="sbboxtxt">세부 4일, 5일<br>가볍게 떠나는 세부 여행<br><br><span>시즌오픈! 특별기획상품
+                                6월 출발까지 미리미리 준비하면
+                                가격은 down 혜택은 up!</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/kota0309.jpg" alt="코타키나발루"><p class="sbboxtxt">코타키나발루 5일<br>황홀한 세계 3대 석양<br><br><span>합리적인 가격의 실속리조트에서 관광(산호섬)과 휴양(자유일정)을 동시에 즐길 수 있는 상품군 입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/ankor0309.jpg" alt="앙코르왓"><p class="sbboxtxt">캄보디아 앙코르왓 5일<br>노쇼핑&amp;노옵션<br><br><span>하나투어 강력추천!! 2015-16년 한국여행업협회(KATA)인증 우수여행상품으로 선정된 NO쇼핑+NO옵션 상품!</span></p></div></div>
+                    </div>
+                </div>
+                <div class="Cont1Box_2 none">
+                    <p class="Cont2nav0208 clearBox">
+                        <a class="Cont2tit">인기상품</a>
+                        <a href="#" class="Cont2list1">동남아</a>
+                        <a href="#" class="Cont2list2">중국<span></span></a>
+                        <a href="#" class="Cont2list3">홍콩<span></span></a>
+                        <a href="#" class="Cont2list4">하이난<span></span></a>
+                        <a href="#" class="Cont2list5">일본<span></span></a>
+                        <a href="#" class="Cont2list6">남태평양<span></span></a>
+                        <a href="#" class="Cont2list7">유럽<span></span></a>
+                        <a href="#" class="Cont2list8">미주<span></span></a>
+                        <a href="#" class="Cont2list9">중남미<span></span></a>
+                        <a href="#" class="Cont2list10">국내 테마<span></span></a>
+                    </p>
+                    <div class="sectionbox0208 clearBox">
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/방콕파타야.jpg" alt="방콕파타야"><p class="sbboxtxt">장가계/원가계 5/6/7일<br>천혜의 자연경관<br><br><span>아바타 배경의 모티브 장가계
+                                세계자연유산 기묘한 절경!
+                                수려한 산수와 중국역사까지!</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/세부.jpg" alt="세부"><p class="sbboxtxt">홍콩 마카오 완전일주<br>3일,4일 코스<br><br><span>낮에는 황홀한 요리를 즐기고
+                                밤에는 도시의 야경을 즐기기!
+                                3개문화유산 마카오까지 한번에</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/코타키나발루.jpg" alt="코타키나발루"><p class="sbboxtxt">중국속의 작은유럽<br>청도 3일 4일<br><br><span>중국속의 유럽으로 불리는 청도
+                                세계적인 칭다오 맥주의 고향!
+                                중국을 즐기는 색다른 방법</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/앙코르왓.jpg" alt="앙코르왓"><p class="sbboxtxt">서안/병마용갱/화산<br>4일 5일<br><br><span>세계4대 고도와
+                                병마용&진시황릉의 도시 서안!
+                                도시속 숨쉬는 옛 왕조의 숨결</span></p></div></div>
+                    </div>
+                </div>
+                <div class="Cont1Box_3 none">
+                    <p class="Cont2nav0208 clearBox">
+                        <a class="Cont2tit">인기상품</a>
+                        <a href="#" class="Cont2list1">동남아</a>
+                        <a href="#" class="Cont2list2">중국<span></span></a>
+                        <a href="#" class="Cont2list3">홍콩<span></span></a>
+                        <a href="#" class="Cont2list4">하이난<span></span></a>
+                        <a href="#" class="Cont2list5">일본<span></span></a>
+                        <a href="#" class="Cont2list6">남태평양<span></span></a>
+                        <a href="#" class="Cont2list7">유럽<span></span></a>
+                        <a href="#" class="Cont2list8">미주<span></span></a>
+                        <a href="#" class="Cont2list9">중남미<span></span></a>
+                        <a href="#" class="Cont2list10">국내 테마<span></span></a>
+                    </p>
+                    <div class="sectionbox0208 clearBox">
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/방콕파타야.jpg" alt="방콕파타야"><p class="sbboxtxt">방콕/파타야<br>노쇼핑&amp;노옵션 5일<br><br><span>쇼핑센터 방문은 ZERO! 방콕/파타야의 메인 선택관광 5가지를 포함한 노쇼핑&노옵션 상품입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/세부.jpg" alt="세부"><p class="sbboxtxt">세부 4일, 5일<br>가볍게 떠나는 세부 여행<br><br><span>이달의 HOT SALE! 저렴하고 알찬 일정으로 꽉~ 짜인 프로모션 상품만 모았습니다. 훌쩍 떠나고 싶지만 가격이 걱정된다면? 하나투어가 여러분의 고민을 덜어드립니다~ 세부 초특가 상품으로 망설임 없이 Go! 지금 당장 캐리어를 꺼내세요!</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/코타키나발루.jpg" alt="코타키나발루"><p class="sbboxtxt">코타키나발루 5일<br>황홀한 세계 3대 석양<br><br><span>합리적인 가격의 실속리조트에서 관광(산호섬)과 휴양(자유일정)을 동시에 즐길 수 있는 상품군 입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/앙코르왓.jpg" alt="앙코르왓"><p class="sbboxtxt">캄보디아 앙코르왓 5일<br>노쇼핑&amp;노옵션<br><br><span>하나투어 강력추천!! 2015-16년 한국여행업협회(KATA)인증 우수여행상품으로 선정된 NO쇼핑+NO옵션 상품!</span></p></div></div>
+                    </div>
+                </div>
+                <div class="Cont1Box_4 none">
+                    <p class="Cont2nav0208 clearBox">
+                        <a class="Cont2tit">인기상품</a>
+                        <a href="#" class="Cont2list1">동남아</a>
+                        <a href="#" class="Cont2list2">중국<span></span></a>
+                        <a href="#" class="Cont2list3">홍콩<span></span></a>
+                        <a href="#" class="Cont2list4">하이난<span></span></a>
+                        <a href="#" class="Cont2list5">일본<span></span></a>
+                        <a href="#" class="Cont2list6">남태평양<span></span></a>
+                        <a href="#" class="Cont2list7">유럽<span></span></a>
+                        <a href="#" class="Cont2list8">미주<span></span></a>
+                        <a href="#" class="Cont2list9">중남미<span></span></a>
+                        <a href="#" class="Cont2list10">국내 테마<span></span></a>
+                    </p>
+                    <div class="sectionbox0208 clearBox">
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/방콕파타야.jpg" alt="방콕파타야"><p class="sbboxtxt">방콕/파타야<br>노쇼핑&amp;노옵션 5일<br><br><span>쇼핑센터 방문은 ZERO! 방콕/파타야의 메인 선택관광 5가지를 포함한 노쇼핑&노옵션 상품입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/세부.jpg" alt="세부"><p class="sbboxtxt">세부 4일, 5일<br>가볍게 떠나는 세부 여행<br><br><span>이달의 HOT SALE! 저렴하고 알찬 일정으로 꽉~ 짜인 프로모션 상품만 모았습니다. 훌쩍 떠나고 싶지만 가격이 걱정된다면? 하나투어가 여러분의 고민을 덜어드립니다~ 세부 초특가 상품으로 망설임 없이 Go! 지금 당장 캐리어를 꺼내세요!</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/코타키나발루.jpg" alt="코타키나발루"><p class="sbboxtxt">코타키나발루 5일<br>황홀한 세계 3대 석양<br><br><span>합리적인 가격의 실속리조트에서 관광(산호섬)과 휴양(자유일정)을 동시에 즐길 수 있는 상품군 입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/앙코르왓.jpg" alt="앙코르왓"><p class="sbboxtxt">캄보디아 앙코르왓 5일<br>노쇼핑&amp;노옵션<br><br><span>하나투어 강력추천!! 2015-16년 한국여행업협회(KATA)인증 우수여행상품으로 선정된 NO쇼핑+NO옵션 상품!</span></p></div></div>
+                    </div>
+                </div>
+                <div class="Cont1Box_5 none">
+                    <p class="Cont2nav0208 clearBox">
+                        <a class="Cont2tit">인기상품</a>
+                        <a href="#" class="Cont2list1">동남아</a>
+                        <a href="#" class="Cont2list2">중국<span></span></a>
+                        <a href="#" class="Cont2list3">홍콩<span></span></a>
+                        <a href="#" class="Cont2list4">하이난<span></span></a>
+                        <a href="#" class="Cont2list5">일본<span></span></a>
+                        <a href="#" class="Cont2list6">남태평양<span></span></a>
+                        <a href="#" class="Cont2list7">유럽<span></span></a>
+                        <a href="#" class="Cont2list8">미주<span></span></a>
+                        <a href="#" class="Cont2list9">중남미<span></span></a>
+                        <a href="#" class="Cont2list10">국내 테마<span></span></a>
+                    </p>
+                    <div class="sectionbox0208 clearBox">
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/방콕파타야.jpg" alt="방콕파타야"><p class="sbboxtxt">방콕/파타야<br>노쇼핑&amp;노옵션 5일<br><br><span>쇼핑센터 방문은 ZERO! 방콕/파타야의 메인 선택관광 5가지를 포함한 노쇼핑&노옵션 상품입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/세부.jpg" alt="세부"><p class="sbboxtxt">세부 4일, 5일<br>가볍게 떠나는 세부 여행<br><br><span>이달의 HOT SALE! 저렴하고 알찬 일정으로 꽉~ 짜인 프로모션 상품만 모았습니다. 훌쩍 떠나고 싶지만 가격이 걱정된다면? 하나투어가 여러분의 고민을 덜어드립니다~ 세부 초특가 상품으로 망설임 없이 Go! 지금 당장 캐리어를 꺼내세요!</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/코타키나발루.jpg" alt="코타키나발루"><p class="sbboxtxt">코타키나발루 5일<br>황홀한 세계 3대 석양<br><br><span>합리적인 가격의 실속리조트에서 관광(산호섬)과 휴양(자유일정)을 동시에 즐길 수 있는 상품군 입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/앙코르왓.jpg" alt="앙코르왓"><p class="sbboxtxt">캄보디아 앙코르왓 5일<br>노쇼핑&amp;노옵션<br><br><span>하나투어 강력추천!! 2015-16년 한국여행업협회(KATA)인증 우수여행상품으로 선정된 NO쇼핑+NO옵션 상품!</span></p></div></div>
+                    </div>
+                </div>
+                <div class="Cont1Box_6 none">
+                    <p class="Cont2nav0208 clearBox">
+                        <a class="Cont2tit">인기상품</a>
+                        <a href="#" class="Cont2list1">동남아</a>
+                        <a href="#" class="Cont2list2">중국<span></span></a>
+                        <a href="#" class="Cont2list3">홍콩<span></span></a>
+                        <a href="#" class="Cont2list4">하이난<span></span></a>
+                        <a href="#" class="Cont2list5">일본<span></span></a>
+                        <a href="#" class="Cont2list6">남태평양<span></span></a>
+                        <a href="#" class="Cont2list7">유럽<span></span></a>
+                        <a href="#" class="Cont2list8">미주<span></span></a>
+                        <a href="#" class="Cont2list9">중남미<span></span></a>
+                        <a href="#" class="Cont2list10">국내 테마<span></span></a>
+                    </p>
+                    <div class="sectionbox0208 clearBox">
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/방콕파타야.jpg" alt="방콕파타야"><p class="sbboxtxt">방콕/파타야<br>노쇼핑&amp;노옵션 5일<br><br><span>쇼핑센터 방문은 ZERO! 방콕/파타야의 메인 선택관광 5가지를 포함한 노쇼핑&노옵션 상품입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/세부.jpg" alt="세부"><p class="sbboxtxt">세부 4일, 5일<br>가볍게 떠나는 세부 여행<br><br><span>이달의 HOT SALE! 저렴하고 알찬 일정으로 꽉~ 짜인 프로모션 상품만 모았습니다. 훌쩍 떠나고 싶지만 가격이 걱정된다면? 하나투어가 여러분의 고민을 덜어드립니다~ 세부 초특가 상품으로 망설임 없이 Go! 지금 당장 캐리어를 꺼내세요!</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/코타키나발루.jpg" alt="코타키나발루"><p class="sbboxtxt">코타키나발루 5일<br>황홀한 세계 3대 석양<br><br><span>합리적인 가격의 실속리조트에서 관광(산호섬)과 휴양(자유일정)을 동시에 즐길 수 있는 상품군 입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/앙코르왓.jpg" alt="앙코르왓"><p class="sbboxtxt">캄보디아 앙코르왓 5일<br>노쇼핑&amp;노옵션<br><br><span>하나투어 강력추천!! 2015-16년 한국여행업협회(KATA)인증 우수여행상품으로 선정된 NO쇼핑+NO옵션 상품!</span></p></div></div>
+                    </div>
+                </div>
+                <div class="Cont1Box_7 none">
+                    <p class="Cont2nav0208 clearBox">
+                        <a class="Cont2tit">인기상품</a>
+                        <a href="#" class="Cont2list1">동남아</a>
+                        <a href="#" class="Cont2list2">중국<span></span></a>
+                        <a href="#" class="Cont2list3">홍콩<span></span></a>
+                        <a href="#" class="Cont2list4">하이난<span></span></a>
+                        <a href="#" class="Cont2list5">일본<span></span></a>
+                        <a href="#" class="Cont2list6">남태평양<span></span></a>
+                        <a href="#" class="Cont2list7">유럽<span></span></a>
+                        <a href="#" class="Cont2list8">미주<span></span></a>
+                        <a href="#" class="Cont2list9">중남미<span></span></a>
+                        <a href="#" class="Cont2list10">국내 테마<span></span></a>
+                    </p>
+                    <div class="sectionbox0208 clearBox">
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/방콕파타야.jpg" alt="방콕파타야"><p class="sbboxtxt">방콕/파타야<br>노쇼핑&amp;노옵션 5일<br><br><span>쇼핑센터 방문은 ZERO! 방콕/파타야의 메인 선택관광 5가지를 포함한 노쇼핑&노옵션 상품입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/세부.jpg" alt="세부"><p class="sbboxtxt">세부 4일, 5일<br>가볍게 떠나는 세부 여행<br><br><span>이달의 HOT SALE! 저렴하고 알찬 일정으로 꽉~ 짜인 프로모션 상품만 모았습니다. 훌쩍 떠나고 싶지만 가격이 걱정된다면? 하나투어가 여러분의 고민을 덜어드립니다~ 세부 초특가 상품으로 망설임 없이 Go! 지금 당장 캐리어를 꺼내세요!</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/코타키나발루.jpg" alt="코타키나발루"><p class="sbboxtxt">코타키나발루 5일<br>황홀한 세계 3대 석양<br><br><span>합리적인 가격의 실속리조트에서 관광(산호섬)과 휴양(자유일정)을 동시에 즐길 수 있는 상품군 입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/앙코르왓.jpg" alt="앙코르왓"><p class="sbboxtxt">캄보디아 앙코르왓 5일<br>노쇼핑&amp;노옵션<br><br><span>하나투어 강력추천!! 2015-16년 한국여행업협회(KATA)인증 우수여행상품으로 선정된 NO쇼핑+NO옵션 상품!</span></p></div></div>
+                    </div>
+                </div>
+                <div class="Cont1Box_8 none">
+                    <p class="Cont2nav0208 clearBox">
+                        <a class="Cont2tit">인기상품</a>
+                        <a href="#" class="Cont2list1">동남아</a>
+                        <a href="#" class="Cont2list2">중국<span></span></a>
+                        <a href="#" class="Cont2list3">홍콩<span></span></a>
+                        <a href="#" class="Cont2list4">하이난<span></span></a>
+                        <a href="#" class="Cont2list5">일본<span></span></a>
+                        <a href="#" class="Cont2list6">남태평양<span></span></a>
+                        <a href="#" class="Cont2list7">유럽<span></span></a>
+                        <a href="#" class="Cont2list8">미주<span></span></a>
+                        <a href="#" class="Cont2list9">중남미<span></span></a>
+                        <a href="#" class="Cont2list10">국내 테마<span></span></a>
+                    </p>
+                    <div class="sectionbox0208 clearBox">
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/방콕파타야.jpg" alt="방콕파타야"><p class="sbboxtxt">방콕/파타야<br>노쇼핑&amp;노옵션 5일<br><br><span>쇼핑센터 방문은 ZERO! 방콕/파타야의 메인 선택관광 5가지를 포함한 노쇼핑&노옵션 상품입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/세부.jpg" alt="세부"><p class="sbboxtxt">세부 4일, 5일<br>가볍게 떠나는 세부 여행<br><br><span>이달의 HOT SALE! 저렴하고 알찬 일정으로 꽉~ 짜인 프로모션 상품만 모았습니다. 훌쩍 떠나고 싶지만 가격이 걱정된다면? 하나투어가 여러분의 고민을 덜어드립니다~ 세부 초특가 상품으로 망설임 없이 Go! 지금 당장 캐리어를 꺼내세요!</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/코타키나발루.jpg" alt="코타키나발루"><p class="sbboxtxt">코타키나발루 5일<br>황홀한 세계 3대 석양<br><br><span>합리적인 가격의 실속리조트에서 관광(산호섬)과 휴양(자유일정)을 동시에 즐길 수 있는 상품군 입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/앙코르왓.jpg" alt="앙코르왓"><p class="sbboxtxt">캄보디아 앙코르왓 5일<br>노쇼핑&amp;노옵션<br><br><span>하나투어 강력추천!! 2015-16년 한국여행업협회(KATA)인증 우수여행상품으로 선정된 NO쇼핑+NO옵션 상품!</span></p></div></div>
+                    </div>
+                </div>
+                <div class="Cont1Box_9 none">
+                    <p class="Cont2nav0208 clearBox">
+                        <a class="Cont2tit">인기상품</a>
+                        <a href="#" class="Cont2list1">동남아</a>
+                        <a href="#" class="Cont2list2">중국<span></span></a>
+                        <a href="#" class="Cont2list3">홍콩<span></span></a>
+                        <a href="#" class="Cont2list4">하이난<span></span></a>
+                        <a href="#" class="Cont2list5">일본<span></span></a>
+                        <a href="#" class="Cont2list6">남태평양<span></span></a>
+                        <a href="#" class="Cont2list7">유럽<span></span></a>
+                        <a href="#" class="Cont2list8">미주<span></span></a>
+                        <a href="#" class="Cont2list9">중남미<span></span></a>
+                        <a href="#" class="Cont2list10">국내 테마<span></span></a>
+                    </p>
+                    <div class="sectionbox0208 clearBox">
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/방콕파타야.jpg" alt="방콕파타야"><p class="sbboxtxt">방콕/파타야<br>노쇼핑&amp;노옵션 5일<br><br><span>쇼핑센터 방문은 ZERO! 방콕/파타야의 메인 선택관광 5가지를 포함한 노쇼핑&노옵션 상품입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/세부.jpg" alt="세부"><p class="sbboxtxt">세부 4일, 5일<br>가볍게 떠나는 세부 여행<br><br><span>이달의 HOT SALE! 저렴하고 알찬 일정으로 꽉~ 짜인 프로모션 상품만 모았습니다. 훌쩍 떠나고 싶지만 가격이 걱정된다면? 하나투어가 여러분의 고민을 덜어드립니다~ 세부 초특가 상품으로 망설임 없이 Go! 지금 당장 캐리어를 꺼내세요!</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/코타키나발루.jpg" alt="코타키나발루"><p class="sbboxtxt">코타키나발루 5일<br>황홀한 세계 3대 석양<br><br><span>합리적인 가격의 실속리조트에서 관광(산호섬)과 휴양(자유일정)을 동시에 즐길 수 있는 상품군 입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/앙코르왓.jpg" alt="앙코르왓"><p class="sbboxtxt">캄보디아 앙코르왓 5일<br>노쇼핑&amp;노옵션<br><br><span>하나투어 강력추천!! 2015-16년 한국여행업협회(KATA)인증 우수여행상품으로 선정된 NO쇼핑+NO옵션 상품!</span></p></div></div>
+                    </div>
+                </div>
+                <div class="Cont1Box_10 none">
+                    <p class="Cont2nav0208 clearBox">
+                        <a class="Cont2tit">인기상품</a>
+                        <a href="#" class="Cont2list1">동남아</a>
+                        <a href="#" class="Cont2list2">중국<span></span></a>
+                        <a href="#" class="Cont2list3">홍콩<span></span></a>
+                        <a href="#" class="Cont2list4">하이난<span></span></a>
+                        <a href="#" class="Cont2list5">일본<span></span></a>
+                        <a href="#" class="Cont2list6">남태평양<span></span></a>
+                        <a href="#" class="Cont2list7">유럽<span></span></a>
+                        <a href="#" class="Cont2list8">미주<span></span></a>
+                        <a href="#" class="Cont2list9">중남미<span></span></a>
+                        <a href="#" class="Cont2list10">국내 테마<span></span></a>
+                    </p>
+                    <div class="sectionbox0208 clearBox">
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/방콕파타야.jpg" alt="방콕파타야"><p class="sbboxtxt">방콕/파타야<br>노쇼핑&amp;노옵션 5일<br><br><span>쇼핑센터 방문은 ZERO! 방콕/파타야의 메인 선택관광 5가지를 포함한 노쇼핑&노옵션 상품입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/세부.jpg" alt="세부"><p class="sbboxtxt">세부 4일, 5일<br>가볍게 떠나는 세부 여행<br><br><span>이달의 HOT SALE! 저렴하고 알찬 일정으로 꽉~ 짜인 프로모션 상품만 모았습니다. 훌쩍 떠나고 싶지만 가격이 걱정된다면? 하나투어가 여러분의 고민을 덜어드립니다~ 세부 초특가 상품으로 망설임 없이 Go! 지금 당장 캐리어를 꺼내세요!</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/코타키나발루.jpg" alt="코타키나발루"><p class="sbboxtxt">코타키나발루 5일<br>황홀한 세계 3대 석양<br><br><span>합리적인 가격의 실속리조트에서 관광(산호섬)과 휴양(자유일정)을 동시에 즐길 수 있는 상품군 입니다.</span></p></div></div>
+                        <div class="Sbimgbox1 clearBox"><div class="Sbimgbox2"><img src="images/앙코르왓.jpg" alt="앙코르왓"><p class="sbboxtxt">캄보디아 앙코르왓 5일<br>노쇼핑&amp;노옵션<br><br><span>하나투어 강력추천!! 2015-16년 한국여행업협회(KATA)인증 우수여행상품으로 선정된 NO쇼핑+NO옵션 상품!</span></p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainCont3_0209 container clearBox">
+            <div class="leftarrow"><a href="#javascript;">&lt;</a></div>
+            <div class="rightarrow"><a href="#javascript;">&gt;</a></div>
+            <h1 class="Cont3tit">추천 도시</h1>
+            <div class="ContFixedBox">
+                <div class="Cont3slideposibox">
+                    <div class="Cont3imgslidebox0212_0">
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_1.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_2.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_3.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_4.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_5.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_6.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="Cont3imgslidebox0212_1">
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_1.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_2.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_3.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_4.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_5.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_6.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="Cont3imgslidebox0212_2">
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_1.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_2.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_3.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_4.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_5.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_6.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="Cont3imgslidebox0212_3">
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_1.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_2.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_3.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_4.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_5.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_6.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="Cont3imgslidebox0212_4">
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_1.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_2.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_3.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_4.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_5.jpg"></a>
+                        </div>
+                        <div class="Cont3imgbox">
+                            <a href="#"><img src="images/recommend_6.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#"><div class="mainCont4_0209"><img src="images/Cont4img.jpg">
+        </div></a>
+        <div class="mainCont5_0209 container clearBox">
+            <h1 class="Cont5tit">여행영상 공모전</h1>
+            <div class="Cont5VideoBox">
+                <iframe width="750" height="422" src="https://www.youtube.com/embed/GjH2cVAiidI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="Cont5txtBox clearBox">
+                <p class="reptxt">
+                        팬더왕&nbsp;&nbsp;<span>영상도 멋지고, 편집이 예술이네요~~</span></p>
+                <p class="reptxt">워럽TV
+                        &nbsp;&nbsp;<span>신경써서 만든 느낌이 확 드는 아마추어 같지 않은 센스가 돋보이는 영상이네요 추천 드리고 갑니다 절때 시켜서 댓글 다는거 아님</span></p>
+                <p class="reptxt">
+                        박병욱&nbsp;&nbsp;<span>영상편집 진짜잘하셨네요ㅠㅠ선남선녀커플 이쁘게연애하시는거 보기좋아요!!</span></p>
+                <p class="reptxt">
+                        양지은&nbsp;&nbsp;<span>기가막히네유</span></p>
+                <p class="reptxt">
+                        홍지현지수&nbsp;&nbsp;<span>영상진짜잘만들었어요!!!  영상보니까  커플여행으로 일본도 너무 좋을것같네요ㅠㅠㅠ</span></p>
+                <p class="reptxt">
+                        임동민&nbsp;&nbsp;<span>이렇게 멋진 영상은 처음이네요!!!</span></p>
+                <p class="reptxt">
+                        kim seyeon&nbsp;&nbsp;<span>우와!! 신기하당 영상 구성 너무 좋네요!! 두 분도 귀여우시고 ㅎㅎㅎ 부러워요~~~!!</span></p>
+                <p class="reptxt">
+                        구본창&nbsp;&nbsp;<span>두분 아주 잘어울리시고 영상도 너무예쁘네요 ㅠㅠ 좋은결과 있으시길!!</span></p>
+                <p class="reptxt">
+                        정주은&nbsp;&nbsp;<span>개쩐당</span></p>
+                <p class="reptxt">
+                        ya haaa&nbsp;&nbsp;<span>지나가던 솔론데 정말 저런 남에서 여 여에서 남으로 이어지는 씬 솔로의 맘을 찢네요 잘보고 갑니다 흑ㅠ 입상하세욥흡</span></p>
+                <!-- <p class="reptxt">서승민
+                        &nbsp;&nbsp;<span>ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ</span></p>
+                <p class="reptxt">
+                        강윤원&nbsp;&nbsp;<span>
+                                중현이 멋있다!</span></p> -->
+                <form action="">
+                    <input type="text" placeholder="댓글 달기">
+                    <input type="submit" class="none">
+                </form>
+                <!-- <a href="#"><h3 class="txt">오사카 이중현 님</h3></a>
+                <a href="#"><h3 class="txt">제주도 김가림 님</h3></a>
+                <a href="#"><h3 class="txt">후쿠오카 한채림 님</h3></a> -->
+            </div>
+        </div>
+        <div class="mainCont6_0209">
+
+        </div>
+    </div>
+    <footer class="clearBox";>
+            <div class="footer">
+                <div class="footerBox1 container">
+                    <p class="footertxt1">
+                        <a href="#" class="intro">회사소개</a>
+                        <a href="#" class="personalinfo">개인정보처리방침</a>
+                        <a href="#" class="travelterm">여행약관</a>
+                        <a href="#" class="useterm">이용약관</a>
+                        <a href="#" class="aboardinsur">해외여행자보험</a>
+                        <a href="#" class="marketing">마케팅제휴</a>
+                        <a href="#" class="searchagent">도우미 대리점 검색</a>
+                    </p>
+                </div>
+                <div class="footerBox2 clearBox">
+                    <div class="footertxtBox2 container">
+                            <div class="footertxt2">
+                                (주)그린투어 대표:홍길동 | 주소:(03161) 서울특별시 종로구 인사동 5길 41<br>사업자 등록번호:102-81-39440 | 통신판매업신고번호:종로 01-1806호 | 사업자정보확인 | 관광사업자 등록번호:제1993 000006호 | 영업보증보험:22억1천만원 가입<br><br>고객센터:1577-1233 | 팩스:02-734-0392 | 개인정보관리 책임자:홍길순<br><br>부득이한 사정에 의해 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.<br><br><br>COPYRIGHT&COPY; GREENTOUR SERVICE INC. ALL RIGHTS RESERVED
+                            </div>
+                            <div class="footerimgbox">
+                                <img src="images/footerimg.png" alt="비짓코리아이어">
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/toolbar_item1_menu"
+        android:title="myItem1" />
+    <item
+        android:id="@+id/toolbar_item2_menu"
+        android:title="myItem2" />
+    <item
+        android:id="@+id/toolbar_account_menu"
+        android:icon="@mipmap/ic_launcher_round"
+        android:title="회원가입"
+        app:showAsAction="always" />
+</menu>

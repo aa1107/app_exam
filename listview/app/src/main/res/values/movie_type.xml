@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movie_type">
+        <item>멜로</item>
+        <item>액션</item>
+        <item>공포</item>
+        <item>스릴러</item>
+    </string-array>
+</resources>

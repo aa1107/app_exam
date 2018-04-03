@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mymovie_date">
+        <item>2018.02.14 개봉</item>
+        <item>2018.02.28 개봉</item>
+        <item>2018.02.22 개봉</item>
+        <item>2018.02.28 개봉</item>
+    </string-array>
+</resources>
