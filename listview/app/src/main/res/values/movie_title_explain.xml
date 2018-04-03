@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movie_title_explain">
+        <item>블랙팬서 즐감~</item>
+        <item>궁합 즐감~</item>
+        <item>월요일이 사라졌다 즐감~</item>
+        <item>리틀 포레스트 즐감~</item>
+        <item>나미야 잡화점의 기적 즐감~</item>
+        <item>셰이프 오브 워터: 사랑의 모양 즐감~</item>
+        <item>더 포스트 즐감~</item>
+    </string-array>
+</resources>

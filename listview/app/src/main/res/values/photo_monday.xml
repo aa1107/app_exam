@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="photo_monday">
+        <item>@drawable/monday1</item>
+        <item>@drawable/monday2</item>
+        <item>@drawable/monday3</item>
+    </string-array>
+</resources>
