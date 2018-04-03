@@ -21,9 +21,40 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumpenscript.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
     <!-- 제이쿼리 -->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    
+    
+
+
+    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
     <script>
-        
+        window.onload=function(){
+            var t=new Date();
+            var year=t.getFullYear();
+            var month=t.getMonth();
+            var date=t.getDate();
+            var day=t.getDay();
+            
+            var dayOfMonth=[31,28,31,30,31,30,31,31,30,31,30,31];
+            var row=Math.ceil((dayOfMonth[month]+day)/7);
+            var lastday=dayOfMonth[month];
+            var daynum=1;
+
+            var calendar1="<h1>"+year+"."+(month+1)+"."+date+"</h1>"+"<table>"
+            for(var i=1;i<=row;i++){
+                calendar1+="<tr>";
+                for(var j=0;j<7;j++){
+                    if((i==1&&j<day)||(i==row&&daynum>lastday)){
+                        calendar1+="<td></td>";
+                    }else{
+                        calendar1+="<td>"+daynum+"</td>";
+                        daynum++;
+                    }
+                }
+                calendar1+="</tr>";
+            }
+            
+            document.getElementById("outOfCal").innerHTML=calendar1;
+        }
     </script>
     <title>서브1</title>
     <!-- 내부 스타일 -->
@@ -34,12 +65,14 @@
 <body>
     <div class="maincontainer0207">
             <div class="header">
-                <a href="#" class="logobox"><img src="images/main_1_logo.jpg" alt="greentour" class="logo"></a>
-                <div class="num1_mainCont1searchbox">
-                    <form action="" method="post"> 
-                        <input type="search" placeholder="나홀로 유럽여행" class="num1_mainCont1searchbar">
-                        <button type="submit" class="num1_mainCont1btn"><i class="material-icons">search</i></button>
-                    </form>
+                <div class="headerbox clearBox">
+                    <a href="#" class="logobox"><img src="images/main_1_logo.jpg" alt="greentour" class="logo"></a>
+                    <div class="num1_mainCont1searchbox">
+                        <form action="" method="post"> 
+                            <input type="search" class="num1_mainCont1searchbar">
+                            <button type="submit" class="num1_mainCont1btn"><i class="material-icons">search</i></button>
+                        </form>
+                    </div>
                 </div>
                     <div class="navbox">
                         <ul class="navigation">
@@ -102,24 +135,58 @@
                     </div>
                 </div>
     </div>
-    <script>
-    </script>
-    <div class="0223container_1 row container">
-        <div class="0223Cont1Box_1 col-7">
-            <h3 class="Cont1tit">[꽉찬일정] 시티투어+코끼리트레킹 방콕/파타야 5일</h3><hr>
-            <p class="tit">상품가격</p><p class="pricetxt">426,400 원 ~ 857,400 원</p><hr>
-            <p class="tit">여행기간</p><p class="txt">3박5일</p><hr>
-            <p class="tit">간략일정</p><p class="txt">부산-방콕(1)-파타야(2)-방콕-부산</p><hr>
-            <p class="tit">상품설명</p><p class="txt">방콕 파타야 주요관광지는 모두포함한 가장 기본일정의 알찬구성 일정. 예약진행 </p>
+    <div class="container_1_0203 container">
+        <hr>
+        <h1 class="Cont1tit0306 container">방콕&amp;파타야 4,5일<hr></h1>
+        <div class="Cont1Box_1_0223 col-6">
+            <div class="MainImgBox"><img src="" alt="">
+                <div class="ImgBox1"><img src="" alt=""></div>
+                <div class="ImgBox2"><img src="" alt=""></div>
+                <div class="ImgBox3"><img src="" alt=""></div>
+                <div class="ImgBox4"><img src="" alt=""></div>
+                <div class="ImgBox5"><img src="" alt=""></div>
+            </div>
         </div>
-        <div class="0223Cont1Box_2 col-5">
-            <img src="" alt="방콕파타야">
-            <div class="bordercircle hidden">1</div>
-            <div class="bordercircle hidden">2</div>
-            <div class="bordercircle hidden">3</div>
+        <div class="Cont1Box_2_0223 col-6">
+            <table class="Cont1Table">
+                <tr>
+                    <td><span class="tit">상품코드</span><span class="txt">CJE501</span></td>
+                </tr>
+                <tr>
+                    <td><span class="tit">상품가격</span><span clss="price">399,000원 ~ 1,199,000원</span></td>
+                </tr>
+                <tr>
+                    <td><span class="tit">여행기간</span><span class="txt">3박4일/3박5일/4박5일</span></td>
+                </tr>
+                <tr>
+                    <td><span class="tit">간략일정</span><span class="txt">인천-방콕-인천</span></td>
+                </tr>
+                <tr>
+                    <td><span class="tit">상품설명</span><span class="txt">오전출발 vs 오후출발 vs 늦은밤출발<br>
+                            원하는 시간대로 선택해서 떠나는<br>
+                            방콕파타야 특급여행!<br>
+                            다양한 항공시간대로 내맘대로<br>
+                            골라가는 여행. 절대 놓치지 마세요!</span></td>
+                </tr>
+                <tr>
+                    <td><span class="btn1">전화상담</span><span class="btn2">문의하기</span></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    </div>
+    <div class="container_2_0306 container">
+        <div class="Cont2Box_1 row">
+            <div class="col-5">
+                <div id="outOfCal">
+                    
+                </div>
+                <div id="calendar"></div>
+            </div>
+            <div class="col-7"></div>
         </div>
     </div>
-
+    
         
     <footer class="clearBox";>
             <div class="footer">
@@ -147,4 +214,11 @@
             </div>
     </footer>
 </body>
+<link rel="stylesheet" href="js/mini-event-calendar.min.css">
+<script src="js/mini-event-calendar.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+</script>
+<script src="js/mini-event-calendar.min.js"></script>
 </html>

@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script>
-        document.write("<h1>안녕하세요</h1>하이루,하이,스미마세","곤니찌와");
-        document.write("aaaaa");
-    </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var str="abcde";
+        console.log(str[0]);
+        console.log(str[1]);
+        console.log(str[2]);
+    })
+</script>
+<style>
+    
+</style>
 </head>
 <body>
+  <label>1st Number&nbsp;&nbsp;<input type="number" class="num1"></label><br>
+  <label>2st Number&nbsp;&nbsp;<input type="number" class="num2"></label><br>
+  <button class="multi">Multiple</button>&nbsp;&nbsp;&nbsp;<button class="divide">Divide</button><br>
+  <p>Result is</p>
+  <p class="result"></p>
+</body> 
 
-</body>
 </html>

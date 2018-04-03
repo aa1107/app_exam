@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="photo_packge">
-        <item>black1/black2/black3</item>
-        <item>goong1/goong2/goong3</item>
-        <item>monday1/monday2/monday3</item>
-        <item>little1/little2/little3</item>
-    </string-array>
-</resources>

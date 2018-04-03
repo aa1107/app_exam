@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edittext_num1;
     EditText edittext_num2;
     TextView textView_result;
-    Button button_add, button_minus;
+    Button button_add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +30,8 @@ public class MainActivity extends AppCompatActivity {
         edittext_num2 = (EditText)findViewById(R.id.add2);
         textView_result = (TextView)findViewById(R.id.result);
         button_add = (Button)findViewById(R.id.btn_add);
-        button_minus = (Button)findViewById(R.id.btn_minus);
         MyListener adder = new MyListener();
-        MyListener2 minus1 = new MyListener2();
-        MyUnitedListener3 myUnitedListener3 = new MyUnitedListener3();
-        button_add.setOnLongClickListener(myUnitedListener3);
-        button_minus.setOnLongClickListener(myUnitedListener3);
+        button_add.setOnClickListener(adder);
         // text컴포넌트2 객체 생성;
 
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -60,54 +56,6 @@ public class MainActivity extends AppCompatActivity {
             int result = Integer.parseInt(input_num1)+Integer.parseInt(input_num2);
             textView_result.setText("결과 : "+result);
         }
-    }
-
-    class MyListener2 implements View.OnClickListener{
-        @Override
-        public void onClick(View view) {
-            String input_num1 = edittext_num1.getText().toString();
-            String input_num2 = edittext_num2.getText().toString();
-
-            int result = Integer.parseInt(input_num1)-Integer.parseInt(input_num2);
-            textView_result.setText("결과 : "+result);
-        }
-    }
-
-    class MyUnitedListener implements View.OnClickListener{
-        @Override
-        public void onClick(View view) {
-            String input_num1 = edittext_num1.getText().toString();
-            String input_num2 = edittext_num2.getText().toString();
-            int result=0;
-            switch (view.getId()){
-                case R.id.btn_add:
-                    result = Integer.parseInt(input_num1)+Integer.parseInt(input_num2);
-                    break;
-                case R.id.btn_minus:
-                    result = Integer.parseInt(input_num1)-Integer.parseInt(input_num2);
-                    break;
-            }
-            textView_result.setText("결과 : "+result);
-        }
-    }
-    class MyUnitedListener3 implements View.OnLongClickListener{
-        @Override
-        public boolean onLongClick(View view) {
-            String input_num1 = edittext_num1.getText().toString();
-            String input_num2 = edittext_num2.getText().toString();
-            int result=0;
-            switch (view.getId()){
-                case R.id.btn_add:
-                    result = Integer.parseInt(input_num1)+Integer.parseInt(input_num2);
-                    break;
-                case R.id.btn_minus:
-                    result = Integer.parseInt(input_num1)-Integer.parseInt(input_num2);
-                    break;
-            }
-            textView_result.setText("결과 : "+result);
-            return false;
-        }
-
     }
 
     @Override

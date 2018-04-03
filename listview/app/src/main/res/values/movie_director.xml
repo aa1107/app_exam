@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="movie_director">
-        <item>홍길동</item>
-        <item>박문수</item>
-        <item>심봉사</item>
-        <item>뺑덕어멈</item>
-    </string-array>
-</resources>

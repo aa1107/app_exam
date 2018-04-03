@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="movie_actor">
-        <item>장동건</item>
-        <item>원빈</item>
-        <item>소지섭</item>
-        <item>박보검</item>
-    </string-array>
-</resources>
