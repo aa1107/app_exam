@@ -54,3 +54,6 @@
 .icon.close::before{
     content: 'close';
 }
+.icon.calendar::before{
+    content:'perm_contact_calendar';
+}

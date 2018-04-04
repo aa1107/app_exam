@@ -192,7 +192,6 @@ button{
     line-height: 45px;
     text-align: center;
     position:absolute;
-    z-index: 100;
     left: 10px;
     top: 0;
 }
@@ -204,7 +203,6 @@ button{
     line-height: 45px;
     text-align: center;
     position:absolute;
-    z-index: 100;
     top: 0;
     right: 10px;
 }
@@ -402,7 +400,7 @@ button{
 }
 
 
-/* 공통 스타일 */
+/* common style */
 .pointTxt{
     color:#ffd800 !important;
 }
@@ -410,6 +408,18 @@ button{
     background:#fff;
     opacity: 0.4;
 } */
+
+/* page2 style */
+.page2 .mapAPI{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#00f;
+    z-index: 0;
+    padding-top:80px;
+}
 .linkDetail{
     position:fixed;
     bottom:-130px;
@@ -455,4 +465,73 @@ button{
     position: absolute;
     top: 10px;
     right: 10px;
+}
+/* page3 style */
+.page3 .item.detail{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 11;
+    background-color:#fff;
+}
+.page3 .item.detail .calendar{
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.page3 .item.detail .close{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.page3 .item.detail .cont{
+    display: block;
+}
+.page3 .item .tit{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.page3 .item.detail .tit{
+    border-bottom:1px solid #ccc;
+    margin-bottom: 10px;
+}
+.page3 .item .img{
+    padding: 0 20px;
+    height: 200px;
+    overflow-y:hidden;
+}
+.page3 .item .img img{
+    width: 100%;
+}
+.page3 .item .phone{
+    padding: 10px 20px;
+    padding-bottom:0px;
+}
+.page3 .item.detail .phone{
+    padding-bottom:10px;
+}
+.page3 .item.detail .cont{
+    padding:0 20px;
+}
+.page3 .item .close,
+.page3 .item .calendar,
+.page3 .item .cont
+{
+    display:none;    
+}
+.page3 .item .link{
+    display:block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom:20px;
+}
+body.pushable > .pusher {
+    background: #FFFFFF;
+    height: fit-content;
 }

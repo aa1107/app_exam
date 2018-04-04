@@ -36,5 +36,8 @@ $(document).ready(function () {
     $(".ui.sidebar .close").on("click", function () {
         $('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
     })
+    $(".header .back").on("click",function(){
+        history.back();
+    })
 
 })
