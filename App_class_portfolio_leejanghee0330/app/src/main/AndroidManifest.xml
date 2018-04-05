@@ -24,6 +24,7 @@
         <activity android:name=".TestActivity"></activity>
         <activity android:name=".AddTripActivity"></activity>
         <activity android:name=".ListTripActivity"></activity>
+        <activity android:name=".InfoScheduleActivity"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 

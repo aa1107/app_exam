@@ -45,7 +45,7 @@ public class MyListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView==null){
-            convertView=layoutInflater.inflate(R.layout.)
+//            convertView=layoutInflater.inflate(R.layout.)
         }
         return convertView;
     }
