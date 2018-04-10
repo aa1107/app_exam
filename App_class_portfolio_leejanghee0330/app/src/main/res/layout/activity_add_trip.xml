@@ -29,7 +29,7 @@
             tools:layout_editor_absoluteY="11dp">
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/textView_title_addTrip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -39,7 +39,7 @@
     </android.support.v7.widget.Toolbar>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText_title_addTrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView_startDay_addTrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView_endDay_addTrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -85,7 +85,7 @@
         app:layout_constraintTop_toBottomOf="@+id/guideline6" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView_personNum_addTrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -99,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@+id/guideline5" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textView_money_addTrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -176,7 +176,7 @@
         app:layout_constraintGuide_begin="355dp" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editText_startDay_addTrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -195,7 +195,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/editText_endDay_addTrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -212,7 +212,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_minus_addTrip"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginBottom="8dp"
@@ -225,7 +225,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/editText_money_addTrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -241,7 +241,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_plus_addTrip"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginBottom="8dp"
@@ -253,7 +253,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/editText_personNum_addTrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -263,11 +263,11 @@
         android:background="@drawable/border_2"
         android:ems="10"
         android:gravity="center"
-        android:hint="1"
-        android:inputType="number"
+        android:inputType="text"
+        android:text="1명"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/button_plus_addTrip"
+        app:layout_constraintStart_toEndOf="@+id/button_minus_addTrip"
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
 </android.support.constraint.ConstraintLayout>

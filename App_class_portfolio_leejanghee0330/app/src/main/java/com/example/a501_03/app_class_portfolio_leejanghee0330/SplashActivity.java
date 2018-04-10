@@ -44,7 +44,7 @@ public class SplashActivity extends AppCompatActivity {
             Toast.makeText(this,"5초가 지났습니다.",Toast.LENGTH_LONG).show();
         }catch (Exception e){}*/
 
-        Intent intent=new Intent(SplashActivity.this,InfoScheduleActivity.class);
+        Intent intent=new Intent(SplashActivity.this,AddTripActivity.class);
         startActivity(intent);
         finish();
     }
