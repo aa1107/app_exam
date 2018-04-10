@@ -54,6 +54,9 @@ body {
     padding:60px 190px;
 	opacity: 0.9
 }
+#text h1 span{
+    transition: color 0.5s linear;
+}
 /*  */
 body header{
     height: 80px;
@@ -66,6 +69,7 @@ body header .headerbox{
     padding-bottom: 28px;
 }
 body header .headerbox .logo{
+    line-height: 25px;
     font-family: 'Lithos Pro',sans-serif;
     font-size: 30px;
     color:#fff;
@@ -81,11 +85,8 @@ body header .headerbox .menu .txt{
     color:#555555;
     font-weight: bold;
     font-size:18px;
-    vertical-align: super;
+    vertical-align: 8px;
     padding-left: 5px;
-}
-.btn{
-    
 }
 body header .login,body header .account{
     display:block;
@@ -95,6 +96,9 @@ body header .login,body header .account{
     border:none;
     color:#fff;
     font-weight: bold;
+}
+body header .login:hover,body header .account:hover{
+    color:rgba(227, 77, 104);
 }
 body header .login{
     padding-left: 20px;
@@ -118,21 +122,39 @@ body .cont2tit{
     text-align: center;
 }
 body .cont2 .cont2box .imgbox{
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+    border-radius: 15px;
     background:#fff;
     margin-bottom: 20px;
     box-sizing: border-box;
     width:285px;
     height:300px;
     float: left;
+    overflow: hidden;
+}
+body .cont2 .cont2box .imgbox:hover{
+    
 }
 body .cont2 .cont2box .imgbox img{
-    border-bottom:1px solid #ccc;
     width:100%;
 }
 body .cont2 .cont2box .imgbox .txt{
+    text-align: center;
+    background:#f7f7f7;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#21abc7d5;
     margin: 0;
     height: 100px;
-    padding: 10px;
+    padding: 12px;
+}
+body .cont2 .cont2box .imgbox .txt .subtxt{
+    font-family:'Noto Serif';
+    font-weight: normal;
+    margin:0;
+    font-size:1rem;
+    margin-top:10px;
+    color:#666;
 }
 body .cont2 .cont2box .imgbox:nth-child(4n+2){
     margin:0 20px
@@ -143,7 +165,10 @@ body .cont2 .cont2box .imgbox:nth-child(4n+3){
 }
 body .cont3{
     height:1200px;
-    border:1px solid black;
+    background:#fff;
+}
+body .cont3 .item1{
+
 }
 body .cont4{
     height:440px;
