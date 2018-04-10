@@ -56,18 +56,22 @@
                 <!-- Swiper -->
                 <div class="swiper-container gallery-thumbs tabMenu">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide active">대통령기념관</div>
-                        <div class="swiper-slide">하늘정원</div>
-                        <div class="swiper-slide">국화축제</div>
-                        <div class="swiper-slide">청남대본관</div>
-                        <div class="swiper-slide">전망대</div>
-                        <div class="swiper-slide">대통령광장</div>
-                        <div class="swiper-slide">돌탑</div>
-                        <div class="swiper-slide">음악분수대</div>
-                        <div class="swiper-slide">영춘재</div>
+                        <div class="swiper-slide active" data-img="img_01_01.jpg">대통령기념관</div>
+                        <div class="swiper-slide" data-img="img_01_02.jpg">하늘정원</div>
+                        <div class="swiper-slide" data-img="img_01_03.jpg">국화축제</div>
+                        <div class="swiper-slide" data-img="img_01_01.jpg">청남대본관</div>
+                        <div class="swiper-slide" data-img="img_01_02.jpg">전망대</div>
+                        <div class="swiper-slide" data-img="img_01_03.jpg">대통령광장</div>
+                        <div class="swiper-slide" data-img="img_01_01.jpg">돌탑</div>
+                        <div class="swiper-slide" data-img="img_01_02.jpg">음악분수대</div>
+                        <div class="swiper-slide" data-img="img_01_03.jpg">영춘재</div>
                     </div>
                 </div>
             </main>
+        </div>
+        <div class="mapAPI">
+            <img src="images/mapApi.png" alt="">
+            <!-- insert map api source -->
         </div>
     </div>
     <div class="linkDetail">
@@ -94,12 +98,24 @@
     tabMenu.on('tap', function () {
         console.log(this);
         console.log(this.activeIndex);
+        var idx=this.activeIndex;
+        var $activeSlide = $(".tabMenu .swiper-slide").eq(idx);
+        // var imgSrc="images/img_0"+(idx+1)+"_01.jpg";
+        var imgSrc=$activeSlide.attr("data-img");
         $(".tabMenu .active").removeClass("active");
-        $(".tabMenu .swiper-slide").eq(this.activeIndex).addClass("active");
+        $activeSlide.addClass("active");
+        
+        // show .linkDetail elements
         $(".linkDetail").css("bottom","0");
         $(".linkDetail .close").on("click",function(){
             $(".linkDetail").css("bottom","-130px");
         })
+
+        // data setting
+        $(".linkDetail img").attr("src","images/"+imgSrc);
+        $(".linkDetail .tit").text($activeSlide.text());
+        $(".linkDetail .btn").attr("href","page1.html#slide"+(idx+1));
+        
         // $(this).css("color")
     });
 </script>
