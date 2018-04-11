@@ -1,0 +1,66 @@
+/* pc버전 */
+
+
+/* 나눔고딕 웹폰트 스타일 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    vertical-align:top;
+    font-size:1em;
+}
+
+/* 리스트 스타일 */
+ul,
+ol,
+li {
+    list-style-type: none;
+    /* list-style-position: outside; */
+    /* list-style-image: url(); */
+}
+table{
+    /* border-spacing: 0; */
+    border-collapse: collapse;
+}
+html, body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight:700;
+}
+.none{
+    display:none;
+}
+.hidden {
+    text-indent: -9999px;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+}
+.clearBox::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+/* 링크 스타일 */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* a:hover {
+    color: #f00;
+} */
+
+/* a:visited {
+    color: #ccc
+} */
+
+
+/* a:active{background:#00f} */
+
+button{
+    border:none;
+    background:none;
+}
