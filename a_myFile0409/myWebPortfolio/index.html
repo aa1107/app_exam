@@ -27,25 +27,63 @@
     <header>
         <div class="headerbox width1200 row">
             <a href="javascript:;" class="logo col-2">TEEPYDOX</a>
-            <a href="javascript:;" class="icon menu col-2"><p class="txt">카테고리</p></a>
+            <a href="javascript:;" class="icon menu col-2">
+                <p class="txt">카테고리</p>
+            </a>
             <div class="wrap col-4">
                 <div class="search">
-                   <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                   <button type="submit" class="searchButton">
-                     <i class="fa fa-search"></i>
-                  </button>
+                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </div>
-             </div>
+            </div>
             <a href="#" class="login btn col-1">로그인</a>
             <a href="#" class="account btn col-1">회원가입</a>
-            <select name="" id="" class="col-2"></select>
+            <div class="col-2">
+                <form action="#">
+                    <div class="select-box">
+                        <label for="select-box1" class="label select-box1">
+                            <span class="label-desc">language</span>
+                        </label>
+                        <select id="select-box1" class="select">
+                            <option value="Choice 1">Korean</option>
+                            <option value="Choice 2">English</option>
+                            <option value="Choice 3">Japanese</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
         </div>
     </header>
     <div class="cont1">
         <canvas id="canvas"></canvas>
         <div id="text">
-            <h1><span>T</span><span>E</span><span>E</span><span>P</span><span>Y</span><span>D</span><span>O</span><span>X</span><letterSp class="txt"><span>에</span> <span>오</span><span>신</span><span>것</span><span>을</span> <span>환</span><span>영</span>
-                <span>합</span><span>니</span><span>다</span><span>!</span></letterSp></h1>
+            <h1>
+                <letterSp class="txt">
+                    <span>T</span>
+                    <span>E</span>
+                    <span>E</span>
+                    <span>P</span>
+                    <span>Y</span>
+                    <span>D</span>
+                    <span>O</span>
+                    <span>X</span>
+                </letterSp>
+                <letterSp class="txt2">
+                    <span>에</span>&nbsp;&nbsp;&nbsp;
+                    <span>오</span>
+                    <span>신</span>
+                    <span>것</span>
+                    <span>을</span>&nbsp;&nbsp;&nbsp;
+                    <span>환</span>
+                    <span>영</span>
+                    <span>합</span>
+                    <span>니</span>
+                    <span>다</span>
+                    <span>!</span>
+                </letterSp>
+            </h1>
         </div>
     </div>
     <h1 class="cont2tit">교육 과정</h1>
@@ -60,96 +98,158 @@
             <a href="javascript:;" class="imgbox">
                 <img src="images/javascript.jpg" alt="">
                 <div class="txt">자바스크립트
-                <p class="subtxt">강력한 스크립팅 언어로 가벼운 응용프램을 작성해 보십시오.</p>
-            </div>
+                    <p class="subtxt">강력한 스크립팅 언어로 가벼운 응용프램을 작성해 보십시오.</p>
+                </div>
             </a>
             <a href="javascript:;" class="imgbox">
                 <img src="images/java.jpg" alt="">
                 <div class="txt">자바
-                <p class="subtxt">자바언어의 전체적인 내용부터 데이터타입, 문법, 클래스 등을 다룹니다.</p>
-            </div>
+                    <p class="subtxt">자바언어의 전체적인 내용부터 데이터타입, 문법, 클래스 등을 다룹니다.</p>
+                </div>
             </a>
             <a href="javascript:;" class="imgbox">
                 <img src="images/cPlusPlus.jpg" alt="">
                 <div class="txt">C++
-                <p class="subtxt">블록체인, 인공지능 등 최신 기술을 지탱하는 C++을 배웁니다.</p>
-            </div>
+                    <p class="subtxt">블록체인, 인공지능 등 최신 기술을 지탱하는 C++을 배웁니다.</p>
+                </div>
             </a>
             <a href="javascript:;" class="imgbox">
                 <img src="images/csharp.jpg" alt="">
                 <div class="txt">C#
-                <p class="subtxt">C#의 기초를 살펴보고 첫 번재 C# 응용 프로그램을 만듭니다.</p>
-            </div>
+                    <p class="subtxt">C#의 기초를 살펴보고 첫 번재 C# 응용 프로그램을 만듭니다.</p>
+                </div>
             </a>
             <a href="javascript:;" class="imgbox">
                 <img src="images/python.jpg" alt="">
                 <div class="txt">파이썬
-                <p class="subtxt">데이터를 저장, 조작하고 프로그램을 사용하여 의사결정을 내립니다.</p>
-            </div>
+                    <p class="subtxt">데이터를 저장, 조작하고 프로그램을 사용하여 의사결정을 내립니다.</p>
+                </div>
             </a>
             <a href="javascript:;" class="imgbox">
                 <img src="images/database.jpg" alt="">
                 <div class="txt">데이터베이스
-                <p class="subtxt">SQL을 배움으로써 application의 데이터를 제어합니다.</p>
-            </div>
+                    <p class="subtxt">SQL을 배움으로써 application의 데이터를 제어합니다.</p>
+                </div>
             </a>
             <a href="javascript:;" class="imgbox">
                 <img src="images/android.gif" alt="">
                 <div class="txt">안드로이드
-                <p class="subtxt">Android의 기본 사항을 학습하고 앱을 제작합니다.</p>
-            </div>
+                    <p class="subtxt">Android의 기본 사항을 학습하고 앱을 제작합니다.</p>
+                </div>
             </a>
         </div>
     </div>
-    <div class="cont3 width1200">
-        <div class="item1">
-            <img src="" alt="">
-            <p>
-                <span>코딩은 누구나 할 수 있습니다.</span>
-                체계적이고 능률적인 교육은 당신의 능력을 빠른 속도로 향상시킬 것입니다.
-            </p>
-        </div>
-        <div class="item2">
-            <img src="" alt="">
-            <p>
-                <span>우리의 교육은 interactive합니다.</span>
-                실시간으로 학생과 강사가 문답을 주고받음으로써 능동적인 학습을 가능케합니다.
-            </p>
-        </div>
-        <div class="item3">
-            <img src="" alt="">
-            <p>
-                <span>수업은 언제나 들을 수 있습니다.</span>
-                모든 수업은 온라인으로 진행되며 저장됩니다. 당신이 원할 때 언제 어디서나
-                볼 수 있습니다.
-            </p>
+    <div class="cont3">
+        <h1 class="tit">프로그래머가 되고 싶으신가요?</h1>
+        <div class="width1200">
+            <!-- <h1 class="tit"></h1> -->
+            <div class="item row">
+                <div class="imgbox col-6">
+                    <img src="images/education.png" alt="">
+                </div>
+                <div class="col-6 txtbox">
+                    <h3 class="titpoint">Step1</h3>
+                    <h3 class="tit">코딩은 누구나 할 수 있습니다.</h3>
+                    <p class="txt">체계적이고 능률적인 교육은 당신의 능력을 빠른 속도로 향상시킬 것입니다.</p>
+                </div>
+            </div>
+            <div class="item row">
+                <div class="col-6 txtbox">
+                    <h3 class="titpoint">Step2</h3>
+                    <h3 class="tit">우리의 교육은 interactive합니다.</h3>
+                    <p class="txt">실시간으로 학생과 강사가 문답을 주고받음으로써 능동적인 학습을 가능케합니다.</p>
+                </div>
+                <div class="imgbox col-6">
+                    <img src="images/interactive.png" alt="">
+                </div>
+            </div>
+            <div class="item row">
+                <div class="imgbox col-6">
+                    <img src="images/online.png" alt="">
+                </div>
+                <div class="col-6 txtbox">
+                    <h3 class="titpoint">Step3</h3>
+                    <h3 class="tit">수업은 언제나 들을 수 있습니다.</h3>
+                    <p class="txt">모든 수업은 온라인으로 진행되며 저장됩니다. 당신이 원할 때 언제 어디서나 볼 수 있습니다.</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="cont4">
-        <div>준비되셨습니까? 신청하세요!</div>
+        <div class="txtbox">
+            <h1 class="tit">준비되셨습니까? 신청하세요!</h1>
+            <a href="#" class="btn apply">신청하기</a>
+        </div>
     </div>
     <footer>
         <div class="footerbox width1200">
-            
+            <ul>
+                <li>
+                    <a>페이스북 </a>
+                </li>
+                <li>
+                    <a>이용약관</a>
+                </li>
+                <li>
+                    <a>개인정보보호정책</a>
+                </li>
+                <li>
+                    <a>오류신고</a>
+                </li>
+                <li>
+                    <a>사이트맵</a>
+                </li>
+            </ul>
+            <p>TEEPYDOX 온라인 교육원</p>
+            <p>사업자등록번호: 999-99-99999 | 대표: 이장희</p>
+            <p>주소: 충청북도 청주시 서원구 사창동 148-7 4,5층 | 이메일: anonymous@google.com</p>
+            <p>개인정보보호책임자: 이장희 | 원격평생교육시설 신고번호: 제서부일999호 | 통신판매업신고번호: 제2018-대전유성-9999호</p>
+            <p>Copyright © 2018-2018 teepydox. All rights reserved.</p>
         </div>
     </footer>
 </body>
 
 <script src="js/mainanimation.js"></script>
 <script>
-    function textanimation(){
-        var i=0;
-        var text=$("#text>h1 span")
-        setTimeout(function(){
-            setInterval(function(){
-            var item=$("#text>h1 span").eq(i);
-            item.css("color","rgba("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")");
-            i++;
-            if(i==text.length)i=0;
-        },100);
-        },1000)   
+    function textanimation() {
+        var i = 0;
+        var text = $("#text>h1 span")
+        setTimeout(function () {
+            setInterval(function () {
+                var item = $("#text>h1 span").eq(i);
+                item.css("color", "rgba(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() *
+                    256) + "," + Math.floor(Math.random() * 256) + ")");
+                i++;
+                if (i == text.length) i = 0;
+            }, 100);
+        }, 1000)
     }
 
+    $("select").on("click", function () {
+
+        $(this).parent(".select-box").toggleClass("open");
+
+    });
+
+    $(document).mouseup(function (e) {
+        var container = $(".select-box");
+
+        if (container.has(e.target).length === 0) {
+            container.removeClass("open");
+        }
+    });
+
+
+    $("select").on("change", function () {
+
+        var selection = $(this).find("option:selected").text(),
+            labelFor = $(this).attr("id"),
+            label = $("[for='" + labelFor + "']");
+
+        label.find(".label-desc").html(selection);
+
+    });
     textanimation();
 </script>
+
 </html>
